@@ -79,4 +79,37 @@ font-size: 14px;
       height: 50px;
       width: 309px;
     }
+
+    /* conto de falhas: capitulo planos */
+  
+  .planos {
+      display: flex;
+      align-content: space-evenly;
+  }
+  
+  .planos article{
+      width: 345px; ;
+      text-align:start;
+      
+  }
+  
+  .planos article h3{
+      font-size: 22px;
+  }
+  
+  .planos a{
+      text-decoration: none;
+      background-color: #388E3C;
+      color: #FFF;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 5px 25px;
+      text-decoration: none;
+      border-radius: 60px;
+      align-items: flex-end;
+  
+  }
+  
+  /* um verdadeiro conto de falhas */
+  
     
