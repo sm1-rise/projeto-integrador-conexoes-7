@@ -5,7 +5,7 @@ section {
 }
 
 footer .container {
-    background-color: grey;
+    background-color: #388e3c;
     width: 1800px;
     max-width: 100%;
     display: flex;
@@ -18,9 +18,37 @@ footer .container {
 footer .container .logo-footer img {
     width: 80px;
     height: 80px;
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
 footer .container .menu {
-    margin-right: 50px;
+    margin-right: 170px;
+ 
+}
+
+footer .container .menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer .container .menu ul li{
+    padding: 5px;
+    
+}
+
+footer .container .menu ul li a{
+    text-decoration: none;
+    color: white; 
+}
+
+footer .container p{
+    padding-right: 400px;
+    padding-left: 100px;
+    color: white;
+}
+
+footer .container .span{
+    border: 20px white;
+
 }
