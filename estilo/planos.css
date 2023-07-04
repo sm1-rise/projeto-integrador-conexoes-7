@@ -1,0 +1,46 @@
+/* conto de falhas: capitulo planos */
+.planos .apresentacao h2 {
+    text-align: center;
+    color: #388E3C;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.planos article {
+    width: 400px;
+    text-align: left;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 10px 100px / 120px;
+    margin: 50px;
+    padding: 40px;
+    box-shadow: 10px 5px 5px rgb(210, 210, 210);
+}
+
+.planos .lista-planos {
+    display: flex;
+    justify-content: center;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.planos article h3 {
+    font-size: 22px;
+}
+
+.planos .preco p {
+    font-size: 30px;
+    font-style: italic;
+    color: #388E3C;
+}
+
+.planos .botao a {
+    text-decoration: none;
+    background-color: #388E3C;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 25px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+}
