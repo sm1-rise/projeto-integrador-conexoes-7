@@ -11,9 +11,16 @@ footer .container {
     display: flex;
     flex-direction: row;
     height: 221px;
+    border: 1px white;
+    align-items: center;
 }
 
 footer .container .logo-footer img {
     width: 80px;
     height: 80px;
+    margin-left: 50px;
+}
+
+footer .container .menu {
+    margin-right: 50px;
 }
