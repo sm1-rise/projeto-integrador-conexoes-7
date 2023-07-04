@@ -1,0 +1,26 @@
+section {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+footer .container {
+    background-color: grey;
+    width: 1800px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 221px;
+    border: 1px white;
+    align-items: center;
+}
+
+footer .container .logo-footer img {
+    width: 80px;
+    height: 80px;
+    margin-left: 50px;
+}
+
+footer .container .menu {
+    margin-right: 50px;
+}
