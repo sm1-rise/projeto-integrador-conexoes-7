@@ -52,15 +52,31 @@ header .container {
 
 /*INCIO CARDS PLANOS*/
 
-.planos .apresentacao h2 {
+.apresentacao {
+  display: flex;
   text-align: center;
+  justify-content: center;
+  width: 1200px;
+  height: 100px;
+}
+
+.planos .lista-planos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.planos .apresentacao h2 {
   color: #388E3C;
   font-size: 40px;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 65px;
 }
 
 .planos article {
-  width: 400px;
+  width: 300px;
   text-align: left;
   border: 1px solid rgb(210, 210, 210);
   border-radius: 10px 100px / 120px;
@@ -69,12 +85,14 @@ header .container {
   box-shadow: 10px 5px 5px rgb(210, 210, 210);
 }
 
-.planos .lista-planos {
+.planos {
   display: flex;
-  justify-content: center;
-  padding-left: 250px;
-  padding-right: 250px;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
+
+
 
 .planos article h3 {
   font-size: 22px;
@@ -100,10 +118,12 @@ header .container {
 
 /*  FIM CARD PLANOS */
 
+/* FORMULARIO */
 .container {
   width: 1200px;
   padding: 40px;
   margin: 0 auto;
+
 }
 
 .container h2 {
@@ -116,7 +136,7 @@ header .container {
   background-image: url(/imagens/ilustra_contrato.svg);
   background-size: cover;
   background-position: right;
-  margin: 30px;
+  margin-left: 100px;
 }
 
 section .container {
@@ -196,9 +216,8 @@ input[type="submit"]:hover {
   width: 310px;
 }
 
-.body img {
-  justify-content: end;
-  top: 5
-}
 
-/* um verdadeiro conto de falhas */
+
+.contato .container .img-vertical {}
+
+/* FIM FORMULARIO */
