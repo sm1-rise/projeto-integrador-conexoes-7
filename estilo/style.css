@@ -46,12 +46,9 @@ header .menu ul li a::after {
   transition: 0.5s ease-in-out;
 }
 
-
 header .menu ul li a:hover::after {
   width: 100%;
 }
-
-
 
 .container {
   width: 1200px;
@@ -69,6 +66,16 @@ header .container {
   align-items: center;
   height: 80px;
 }
+
+
+/* INCIO BANNER */
+#carouselExampleSlidesOnly .carousel-inner {
+  width: 100%;
+  background: linear-gradient(rgb(144, 144, 250), rgb(255, 255, 255))
+}
+
+
+/* FIM BANNER  */
 
 
 /* FIM HEADER */
@@ -242,8 +249,6 @@ input[type="submit"]:hover {
 
 /* FIM FORMULARIO */
 
-
-
 /* CONTEUDO */
 
 .conteudo .container {
@@ -265,7 +270,6 @@ conteudo .container .status {
 .status {
   padding-left: 100px;
 }
-
 
 .status h3 {
   font-size: 40px;
