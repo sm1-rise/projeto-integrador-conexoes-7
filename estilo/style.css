@@ -74,7 +74,18 @@ header .container {
   background: linear-gradient(rgb(144, 144, 250), rgb(255, 255, 255))
 }
 
+#carouselExampleSlidesOnly .carousel-inner .container-banner {
+  margin-top: 50px;
+  width: 1200px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 
+}
+
+
+#carouselExampleSlidesOnly .carousel-inner
 /* FIM BANNER  */
 
 
@@ -122,8 +133,6 @@ header .container {
   align-items: flex-start;
   flex-wrap: wrap;
 }
-
-
 
 .planos article h3 {
   font-size: 22px;
@@ -262,6 +271,10 @@ input[type="submit"]:hover {
   margin-top: 50px;
 }
 
+.conteudo {
+  background: linear-gradient(0deg, rgba(174, 236, 238, 1) 0%, rgba(144, 144, 250, 0) 100%);
+}
+
 conteudo .container .status {
   padding-left: 100px;
   padding-top: 30px;
@@ -296,3 +309,59 @@ conteudo .container .status {
 }
 
 /* FIM CONTEUDO */
+
+
+/* FOOTER */
+
+footer .container {
+  background-color: #388e3c;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 221px;
+  border: 1px white;
+  align-items: center;
+}
+
+footer .container .logo-footer img {
+  width: 168px;
+  height: 122px;
+  margin-left: 70px;
+}
+
+footer .container .menu {
+  margin-right: 400px;
+
+}
+
+footer .container .menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer .container .menu ul li {
+  padding: 5px;
+
+}
+
+footer .container .menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+footer .container p {
+  padding-right: 400px;
+  padding-left: 100px;
+  color: white;
+}
+
+footer .container .linha {
+  width: 300px;
+  border: 1px solid #000;
+}
+
+/* FIM FOOTER */
