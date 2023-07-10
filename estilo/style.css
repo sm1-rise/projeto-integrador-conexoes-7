@@ -81,8 +81,23 @@ header .container {
   /* | row-reverse | column | column-reverse; */
 }
 
+#carouselExampleSlidesOnly .carousel-inner .conteudo-banner {
+  margin-right: 250px;
+  padding: 50px;
+}
 
-#carouselExampleSlidesOnly .carousel-inner
+#carouselExampleSlidesOnly .carousel-inner .container-banner h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #350874
+}
+
+#carouselExampleSlidesOnly .carousel-inner .container-banner p {
+  font-size: 30px;
+  text-align: left;
+}
+
+
 /* FIM BANNER  */
 
 
