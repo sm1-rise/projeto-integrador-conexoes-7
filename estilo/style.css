@@ -13,7 +13,6 @@ body {
 header .menu {
   display: flex;
   justify-content: right;
-
 }
 
 header .menu ul {
@@ -80,7 +79,6 @@ header .container {
   display: flex;
   flex-direction: row;
   /* | row-reverse | column | column-reverse; */
-
 }
 
 
@@ -318,7 +316,6 @@ footer .container {
   max-width: 100%;
   display: flex;
   flex-direction: row;
-  height: 221px;
   border: 1px white;
   align-items: center;
 }
@@ -330,7 +327,7 @@ footer .container .logo-footer img {
 }
 
 footer .container .menu {
-  margin-right: 400px;
+  padding: 0px 100px;
 
 }
 
@@ -352,15 +349,26 @@ footer .container .menu ul li a {
 }
 
 footer .container p {
-  /* padding-right: 400px;
-  padding-left: 100px; */
+  padding: 50px 30px;
   max-width: 100%;
   color: white;
+  text-align: justify;
+  font-size: 14px;
 }
 
-footer .container .linha {
-  width: 300px;
-  border: 1px solid #000;
+footer .copyright {
+  padding: 15px;
+  border: 1px solid white;
+  text-align: center;
+  background-color: #388E3C;
+  padding: 5px;
+}
+
+footer .copyright p {
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 10px;
 }
 
 /* FIM FOOTER */
