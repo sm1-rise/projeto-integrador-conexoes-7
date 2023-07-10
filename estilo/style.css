@@ -8,7 +8,6 @@ body {
 
 }
 
-
 /* INCIO HEADER  */
 
 header .menu {
@@ -79,8 +78,8 @@ header .container {
   width: 1200px;
   max-width: 100%;
   display: flex;
-  justify-content: space-between;
-  text-align: center;
+  flex-direction: row;
+  /* | row-reverse | column | column-reverse; */
 
 }
 
@@ -115,6 +114,7 @@ header .container {
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 65px;
+  text-align: center;
 }
 
 .planos article {
@@ -310,7 +310,6 @@ conteudo .container .status {
 
 /* FIM CONTEUDO */
 
-
 /* FOOTER */
 
 footer .container {
@@ -343,7 +342,6 @@ footer .container .menu ul {
 
 footer .container .menu ul li {
   padding: 5px;
-
 }
 
 footer .container .menu ul li a {
@@ -354,8 +352,9 @@ footer .container .menu ul li a {
 }
 
 footer .container p {
-  padding-right: 400px;
-  padding-left: 100px;
+  /* padding-right: 400px;
+  padding-left: 100px; */
+  max-width: 100%;
   color: white;
 }
 
