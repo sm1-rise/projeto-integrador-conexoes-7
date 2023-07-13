@@ -3,187 +3,208 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
-    <link rel="stylesheet" href="/estilo/planos.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/estilo/style.css">
 </head>
 
 <body>
-
-        <header>
-            <div class="container">
-    
-                <div class="logo">
-                    <img src="/imagens/logo.png" width="87px" height="67px" alt="Conexos">
-    
-                </div>
-    
-                <div class="menu">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Início</a> </li>
-                            <li><a href="planos.html">Planos</a> </li>
-                            <li><a href="status-de-solicitacoes.html">Status de solicitações</a> </li>
-                        </ul>
-                    </nav>
-    
-                </div>
-            </div>
-        </header>
-    <!-- card dos planos -->
-    <section class="planos">
-        <div class="container-planos">
-            <div class="apresentacao">
-                <h2>conheça nossos planos</h2>
-        </div>
-            <div class=" lista-planos">
-                <article>
-                    <h3>Plano Básico</h3>
-                    <figure class="imagem-plano">
-                        <img src="/imagens/ilustra_1.svg">
-                    </figure>
-                    <div class="texto-plano">
-                        <p>O Plano Básico oferece uma opção acessível para quem busca uma conexão à internet</p>
-                    </div>
-                    <div class="vantagens">
-                        <ul>
-                            <li>Acessível</li>
-                            <li>Velocidade</li>
-                            <li>Confiável</li>
-                        </ul>
-                    </div>
-                    <div class="preco">
-                        <p>R$49,90/mês</p>
-                    </div>
-                    <div class="botao">
-                        <a href="forms.html">escolher plano</a>
-                    </div>
-                </article>
-
-                <article>
-                    <h3> Você+Conectado</h3>
-                    <figure class="imagem-plano">
-                        <img src="/imagens/ilustra_2.svg">
-                    </figure>
-                    <div class="texto-plano">
-                        <p>Você+Conectado é a escolha perfeita para quem deseja uma internet Versátil</p>
-                    </div>
-                    <div class="vantagens">
-                        <ul>
-                            <li> Versátil</li>
-                            <li>Velocidade</li>
-                            <li>Conectividade</li>
-                        </ul>
-                    </div>
-                    <div class="preco">
-                        <p>R$79,00/mês</p>
-                    </div>
-                    <div class="botao">
-                        <a href="forms.html">escolher plano</a>
-                    </div>
-                </article>
-
-                <article>
-                    <h3>Plano Empresarial</h3>
-                    <figure class="imagem-plano">
-                        <img src="/imagens/ilustra_3.svg">
-                    </figure>
-                    <div class="texto-plano">
-                        <p>
-                            O plano Empresarial é altamente personalizável e ideal para atender as demandas corporativas
-                        </p>
-                    </div>
-                    <div class="vantagens">
-                        <ul>
-                            <li>Alta Performance</li>
-                            <li>Personalizável</li>
-                            <li>Confiabilidade</li>
-                        </ul>
-                    </div>
-                    <div class="preco">
-                        <p>sob consulta</p>
-                    </div>
-                    <div class="botao">
-                        <a href="forms.html">escolher plano</a>
-                    </div>
-                </article>
-            </div>
-    </section>
-
-<!-- formulario -->
-
-    <section class="contato">
+    <!--HEADER-->
+    <header>
         <div class="container">
-          <div class="formulario">
-            <h2>Contratação do plano</h2>
-            <form>
-              <div class="form-group">
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" required>
-              </div>
-              <div class="form-group">
-                <label for="cpf">CPF:</label>
-                <input type="text" id="cpf" name="cpf" required>
-              </div>
-              <div class="form-group">
-                <label for="telefone">Telefone para contato:</label>
-                <input type="text" id="telefone" name="telefone" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                <label for="plano">Plano:</label>
-                <select id="plano" name="plano" required>
-                  <option value="plano1">Plano Basico</option>
-                  <option value="plano2">Você+conectado</option>
-                  <option value="plano3">Plano empresarial</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="horario">Preferência de horário para visita técnica:</label>
-                <select id="horario" name="horario" required>
-                  <option value="09-11">09 ás 11h</option>
-                  <option value="12-14">12 ás 14h</option>
-                  <option value="15-17">15 ás 17h</option>
-                </select>
-              </div>
-              <input type="submit" value="Contratar">
-            </form>
-          </div>
-          <div class="img-vertical"></div>
+            <div class="logo">
+                <img src="/imagens/logo.png" width="87px" height="67px" alt="Conexos">
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a> </li>
+                        <li><a href="planos.html">Planos</a> </li>
+                        <li><a href="status-de-solicitacoes.html">Status de solicitações</a> </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-      </section>
+    </header>
+
+    <main>
+
+        <!-- card dos planos -->
+        <section class="planos">
+            <div class="container-plano">
+                <div class="apresentacao">
+                    <h2>conheça nossos planos</h2>
+                </div>
+                <div class=" lista-planos">
+                    <article>
+                        <h3>Plano Básico</h3>
+                        <figure class="imagem-plano">
+                            <img src="/imagens/ilustra_1.svg">
+                        </figure>
+                        <div class="texto-plano">
+                            <p>O Plano Básico oferece uma opção acessível para quem busca uma conexão à internet</p>
+                        </div>
+                        <div class="vantagens">
+                            <ul>
+                                <li>Acessível</li>
+                                <li>Velocidade</li>
+                                <li>Confiável</li>
+                            </ul>
+                        </div>
+                        <div class="preco">
+                            <p>R$49,90/mês</p>
+                        </div>
+                        <div class="botao">
+                            <a href="forms.html">escolher plano</a>
+                        </div>
+                    </article>
+
+                    <article>
+                        <h3> Você+Conectado</h3>
+                        <figure class="imagem-plano">
+                            <img src="/imagens/ilustra_2.svg">
+                        </figure>
+                        <div class="texto-plano">
+                            <p>Você+Conectado é a escolha perfeita para quem deseja uma internet Versátil</p>
+                        </div>
+                        <div class="vantagens">
+                            <ul>
+                                <li> Versátil</li>
+                                <li>Velocidade</li>
+                                <li>Conectividade</li>
+                            </ul>
+                        </div>
+                        <div class="preco">
+                            <p>R$79,00/mês</p>
+                        </div>
+                        <div class="botao">
+                            <a href="forms.html">escolher plano</a>
+                        </div>
+                    </article>
+
+                    <article>
+                        <h3>Plano Empresarial</h3>
+                        <figure class="imagem-plano">
+                            <img src="/imagens/ilustra_3.svg">
+                        </figure>
+                        <div class="texto-plano">
+                            <p>
+                                O plano Empresarial é altamente personalizável e ideal para atender as demandas
+                                corporativas
+                            </p>
+                        </div>
+                        <div class="vantagens">
+                            <ul>
+                                <li>Alta Performance</li>
+                                <li>Personalizável</li>
+                                <li>Confiabilidade</li>
+                            </ul>
+                        </div>
+                        <div class="preco">
+                            <p>sob consulta</p>
+                        </div>
+                        <div class="botao">
+                            <a href="forms.html">escolher plano</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- formulario -->
+        <section class="contato">
+            <div class="container">
+                <div class="formulario">
+                    <h2>Contratação do plano</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="nome">Nome completo:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cpf">CPF:</label>
+                            <input type="text" id="cpf" name="cpf" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone para contato:</label>
+                            <input type="text" id="telefone" name="telefone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="plano">Plano:</label>
+                            <select id="plano" name="plano" required>
+                                <option value="plano1">Plano Basico</option>
+                                <option value="plano2">Você+conectado</option>
+                                <option value="plano3">Plano empresarial</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="horario">Preferência de horário para visita técnica:</label>
+                            <select id="horario" name="horario" required>
+                                <option value="09-11">09 ás 11h</option>
+                                <option value="12-14">12 ás 14h</option>
+                                <option value="15-17">15 ás 17h</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="Contratar">
+                    </form>
+                </div>
+                <div class="img-vertical"></div>
+            </div>
+        </section>
+        <!-- 
+    FIM FORMULARIO -->
 
 
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <figure class="logo-footer">
+                <img class="imagem-footer" src="/imagens/conexos-logo-white (4) 1.svg" alt="logotipo-do-rodape">
+            </figure>
+            <div class="texto-footer">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                    Et dicta neque ipsum id numquam corruptised praesentium<br>
+                    enim quisquam, tempore dignissimos ullam est nostrum,<br>
+                    iure, molestias deleniti tempora quibusdam non!
+                </p>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a> </li>
+                        <li><a href="planos.html">Planos</a> </li>
+                        <li><a href="status-de-solicitacoes.html">Status de solicitação</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Projeto desenvolvido na academia Aprendiz Vivo Tech - Gama Academy</p>
+        </div>
+    </footer>
+
+    <!-- FIM FOOTER -->
+
+    <!-- FIM FOOTER -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
-
-<footer>
-    <div class="container">
-        <figure class="logo-footer">
-            <img class="imagem-footer" src="/imagens/conexos-logo-white (4) 1.svg" alt="logotipo-do-rodape">
-        </figure>
-        <div class="texto-footer">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-                Et dicta neque ipsum id numquam corruptised praesentium<br>
-                enim quisquam, tempore dignissimos ullam est nostrum,<br>
-                iure, molestias deleniti tempora quibusdam non!
-            </p>
-        </div>
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a> </li>
-                    <li><a href="planos.html">Planos</a> </li>
-                    <li><a href="status-de-solicitacoes.html">Status de solicitação</a> </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Projeto desenvolvido na academia Aprendiz Vivo Tech - Gama Academy</p>
-    </div>
-</footer>
 
 </html>
