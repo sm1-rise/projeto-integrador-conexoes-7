@@ -69,7 +69,7 @@ header .container {
 /* INCIO BANNER */
 #carouselExampleSlidesOnly .carousel-inner {
   width: 100%;
-  background: linear-gradient(rgb(144, 144, 250), rgb(255, 255, 255))
+  background: linear-gradient(rgba(13, 132, 21, 0.712), rgb(255, 255, 255))
 }
 
 #carouselExampleSlidesOnly .carousel-inner .container-banner {
@@ -89,7 +89,7 @@ header .container {
 #carouselExampleSlidesOnly .carousel-inner .container-banner h2 {
   font-size: 50px;
   font-weight: bold;
-  color: #350874
+  color: #2f7933;
 }
 
 #carouselExampleSlidesOnly .carousel-inner .container-banner p {
