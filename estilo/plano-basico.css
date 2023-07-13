@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* INCIO HEADER  */
+
+header .menu {
+    display: flex;
+    justify-content: right;
+}
+
+header .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header .menu ul li {
+    display: inline-block;
+    padding: 10px 12px;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+
+header .menu ul li a::after {
+    content: " ";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s ease-in-out;
+}
+
+header .menu ul li a:hover::after {
+    width: 100%;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #388e3c;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+
+main {
+    width: 1200px;
+}
+
+/* FORMULARIO */
+
+
+.container h2 {
+    color: #388E3C;
+}
+
+.formulario {
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid rgb(210, 210, 210);
+    box-shadow: 10px 5px 5px rgb(210, 210, 210);
+}
+
+.form-group {
+
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+label {
+    width: 289px;
+    height: 30px;
+    flex-shrink: 0;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+    width: 289px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #388E3C;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #388E3C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 310px;
+    height: 35px;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+input[type="submit"]:hover {
+    background-color: #006400;
+
+}
+
+
+.form-group option {
+    font-size: 14px;
+}
+
+#horario {
+    height: 50px;
+    width: 310px;
+
+}
+
+#plano {
+    height: 50px;
+    width: 310px;
+}
+
+/* FIM FORMULARIO */
+
+/* FOOTER */
+
+footer .container {
+    background-color: #388e3c;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px white;
+    align-items: center;
+}
+
+footer .container .logo-footer img {
+    width: 168px;
+    height: 122px;
+    margin-left: 70px;
+}
+
+footer .container .menu {
+    padding: 0px 100px;
+
+}
+
+footer .container .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer .container .menu ul li {
+    padding: 5px;
+}
+
+footer .container .menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+footer .container p {
+    padding: 50px 30px;
+    max-width: 100%;
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+}
+
+footer .copyright {
+    padding: 15px;
+    border: 1px solid white;
+    text-align: center;
+    background-color: #388E3C;
+    padding: 5px;
+}
+
+footer .copyright p {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 10px;
+}
+
+
+
+/* FIM PAGINA PLANO BASICO  */
