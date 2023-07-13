@@ -1,39 +1,125 @@
 /* conto de falhas: capitulo planos */
-.planos .apresentacao h2 {
-    text-align: center;
-    color: #388E3C;
-    font-size: 40px;
-    text-transform: capitalize;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
-.planos article {
-    width: 400px;
+/* header */
+
+header .menu {
+    display: flex;
+    justify-content: right;
+  }
+  
+  header .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  header .menu ul li {
+    display: inline-block;
+    padding: 10px 12px;
+  }
+  
+  header .menu ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+  }
+  
+  
+  header .menu ul li a::after {
+    content: " ";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s ease-in-out;
+  }
+  
+  header .menu ul li a:hover::after {
+    width: 100%;
+  }
+  
+  .container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #388e3c;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  
+
+/* card de planos */ 
+.apresentacao {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 1200px;
+    height: 100px;
+  }
+  
+  .planos .lista-planos {
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .planos .apresentacao h2 {
+    color: #388E3C;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 65px;
+    text-align: center;
+    
+  }
+  
+  .planos article {
+    width: 200px;
     text-align: left;
     border: 1px solid rgb(210, 210, 210);
     border-radius: 10px 100px / 120px;
     margin: 50px;
     padding: 40px;
     box-shadow: 10px 5px 5px rgb(210, 210, 210);
-}
-
-.planos .lista-planos {
+  }
+  
+  .planos {
     display: flex;
-    justify-content: center;
-    padding-left: 250px;
-    padding-right: 250px;
-}
-
-.planos article h3 {
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .planos article h3 {
     font-size: 22px;
-}
-
-.planos .preco p {
+  }
+  
+  .planos .preco p {
     font-size: 30px;
     font-style: italic;
     color: #388E3C;
-}
-
-.planos .botao a {
+  }
+  
+  .planos .botao a {
     text-decoration: none;
     background-color: #388E3C;
     color: #FFF;
@@ -43,4 +129,165 @@
     border-radius: 40px;
     display: flex;
     justify-content: center;
-}
+  }
+/* formulario */
+
+ .container {
+    width: 1200px;
+    padding: 40px;
+    margin: 0 auto;
+  
+  } 
+  
+  .container h2 {
+    color: #388E3C;
+  }
+  
+  .img-vertical {
+    width: 500px;
+    height: 500px;
+    background-image: url(/imagens/ilustra_contrato.svg);
+    background-size: cover;
+    background-position: right;
+    margin-left: 100px;
+  }
+  
+  section .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .formulario {
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid rgb(210, 210, 210);
+    box-shadow: 10px 5px 5px rgb(210, 210, 210);
+  }
+  
+  .form-group {
+  
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  label {
+    width: 289px;
+    height: 30px;
+    flex-shrink: 0;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  select {
+    width: 289px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #388E3C;
+    border-radius: 5px;
+    flex-shrink: 0;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #388E3C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 310px;
+    height: 35px;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 14px;
+  
+    font-weight: 700;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #006400;
+  
+  }
+  
+  
+  .form-group option {
+    font-size: 14px;
+  }
+  
+  #horario {
+    height: 50px;
+    width: 310px;
+  
+  }
+  
+  #plano {
+    height: 50px;
+    width: 310px;
+  }
+
+  /* footer */
+
+  footer .container {
+    background-color: #388e3c;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px white;
+    align-items: center;
+  }
+  
+  footer .container .logo-footer img {
+    width: 168px;
+    height: 122px;
+    margin-left: 70px;
+  }
+  
+  footer .container .menu {
+    padding: 0px 100px;
+  
+  }
+  
+  footer .container .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  footer .container .menu ul li {
+    padding: 5px;
+  }
+  
+  footer .container .menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+  }
+  
+  footer .container p {
+    padding: 50px 30px;
+    max-width: 100%;
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+  }
+  
+  footer .copyright {
+    padding: 15px;
+    border: 1px solid white;
+    text-align: center;
+    background-color: #388E3C;
+    padding: 5px;
+  }
+  
+  footer .copyright p {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 10px;
+  }
