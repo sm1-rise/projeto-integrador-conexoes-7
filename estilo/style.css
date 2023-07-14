@@ -5,7 +5,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
-
 }
 
 /* INCIO HEADER  */
@@ -77,13 +76,8 @@ header .container {
   width: 1200px;
   max-width: 100%;
   display: flex;
-  flex-direction: row;
+  /*flex-direction: row;
   /* | row-reverse | column | column-reverse; */
-}
-
-#carouselExampleSlidesOnly .carousel-inner .conteudo-banner {
-  margin-right: 250px;
-  padding: 50px;
 }
 
 #carouselExampleSlidesOnly .carousel-inner .container-banner h2 {
@@ -96,7 +90,6 @@ header .container {
   font-size: 30px;
   text-align: left;
 }
-
 
 /* FIM BANNER  */
 
@@ -390,8 +383,221 @@ footer .copyright {
 footer .copyright p {
   color: white;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 7px;
   margin: 10px;
 }
 
 /* FIM FOOTER */
+
+/* 
+FIM PAG NORMAL */
+
+
+/* AJUSTE TAMANHO ATE 1100PX */
+
+
+@media(max-width:1100px) {
+  img.slide {
+    max-width: 700px;
+  }
+
+  #carouselExampleSlidesOnly .carousel-inner .container-banner h2 {
+    padding: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+  }
+
+  #carouselExampleSlidesOnly .carousel-inner .container-banner p {
+    font-size: 20px;
+    text-align: left;
+  }
+
+
+  /* CARDS */
+
+  .apresentacao {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 1100px;
+    height: 100px;
+  }
+
+  .planos .apresentacao h2 {
+    color: #388E3C;
+    font-size: 35px;
+    margin-top: 35px;
+
+  }
+
+  .planos article {
+    width: 250px;
+    text-align: left;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 10px 100px / 120px;
+    margin: 0px;
+    box-shadow: 10px 5px 5px rgb(210, 210, 210);
+  }
+
+  .planos article h3 {
+    padding: 7px 15px;
+    font-size: 15px;
+  }
+
+  .planos .preco p {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  .planos .botao a {
+    font-size: 10px;
+  }
+
+  .planos .botao {
+    max-width: 179px;
+    padding-left: 50px;
+  }
+
+  /* FIM CARDS */
+
+  /* FOOTER */
+  footer .container {
+    background-color: #388e3c;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px white;
+    align-items: center;
+    padding: 0px;
+  }
+
+  footer .container .logo-footer img {
+    width: 168px;
+    height: 122px;
+    margin-left: 70px;
+  }
+
+  footer .container .menu {
+    padding: 0px 100px;
+
+  }
+
+  footer .container .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  footer .container .menu ul li {
+    padding: 5px;
+  }
+
+  footer .container .menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+  }
+
+  footer .container p {
+    padding: 50px 30px;
+    max-width: 100%;
+    color: white;
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  footer .copyright {
+    padding: 15px;
+    border: 1px solid white;
+    text-align: center;
+    background-color: #388E3C;
+    padding: 5px;
+  }
+
+  footer .copyright p {
+    color: white;
+    font-weight: bold;
+    font-size: 7px;
+    margin: 10px;
+  }
+
+  /* FIM FOOTER */
+
+
+}
+
+/*FIM AJUSTE DE TELA 1100PX */
+
+
+/* AJUSTE TAMANHO DE TELA 900PX */
+
+@media(max-width:900px) {
+
+  img.slide {
+    max-width: 400px;
+  }
+
+  /* CARDS */
+
+  .apresentacao {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 900px;
+    height: 100px;
+  }
+
+  .planos .apresentacao h2 {
+    color: #388E3C;
+    font-size: 30px;
+    margin-top: 30px;
+
+  }
+
+  .planos article {
+    width: 220px;
+    text-align: left;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 10px 100px / 120px;
+    margin: 0px 30px;
+    box-shadow: 10px 5px 5px rgb(210, 210, 210);
+  }
+
+
+  /* FIM CARDS */
+
+  /* IMAGEM FORMULARIO */
+
+  .img-vertical {
+    width: 300px;
+    height: 300px;
+    background-image: url(/imagens/ilustra_contrato.svg);
+    background-size: cover;
+    background-position: right;
+    margin-left: 100px;
+  }
+
+  /* FIM IMAGEM FORMULARIO */
+
+  /* CONTEUDO */
+
+  .conteudo .container {
+    width: 900px;
+    max-width: 100%;
+  }
+
+  .status .botao a {
+    padding: 10px 100px;
+  }
+
+  .status .botao a:hover {
+    background-color: #006400;
+  }
+
+  /* FIM CONTEUDO */
+
+
+}

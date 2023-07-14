@@ -34,7 +34,6 @@ header .menu ul li a {
   position: relative;
 }
 
-
 header .menu ul li a::after {
   content: " ";
   position: absolute;
