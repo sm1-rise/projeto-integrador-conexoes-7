@@ -89,7 +89,7 @@ header .container {
 #carouselExampleSlidesOnly .carousel-inner .container-banner h2 {
   font-size: 50px;
   font-weight: bold;
-  color: #2f7933;
+  color: white;
 }
 
 #carouselExampleSlidesOnly .carousel-inner .container-banner p {
@@ -169,6 +169,10 @@ header .container {
   justify-content: center;
 }
 
+.planos .botao a:hover {
+  background-color: #006400;
+}
+
 /*  FIM CARD PLANOS */
 
 /* FORMULARIO */
@@ -233,7 +237,7 @@ select {
 }
 
 input[type="submit"] {
-  padding: 10px 20px;
+  padding: 5px 20px;
   background-color: #388E3C;
   color: #fff;
   border: none;
@@ -319,6 +323,10 @@ conteudo .container .status {
   padding: 10px 130px;
   font-weight: bold;
   border-radius: 10px;
+}
+
+.status .botao a:hover {
+  background-color: #006400;
 }
 
 /* FIM CONTEUDO */
