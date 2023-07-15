@@ -398,7 +398,7 @@ FIM PAG NORMAL */
 
 @media(max-width:1100px) {
   img.slide {
-    max-width: 700px;
+    max-width: 600px;
   }
 
   #carouselExampleSlidesOnly .carousel-inner .container-banner h2 {
@@ -422,6 +422,7 @@ FIM PAG NORMAL */
     justify-content: center;
     width: 1100px;
     height: 100px;
+    margin: 0px -50px;
   }
 
   .planos .apresentacao h2 {
@@ -432,7 +433,7 @@ FIM PAG NORMAL */
   }
 
   .planos article {
-    width: 250px;
+    width: 300px;
     text-align: left;
     border: 1px solid rgb(210, 210, 210);
     border-radius: 10px 100px / 120px;
