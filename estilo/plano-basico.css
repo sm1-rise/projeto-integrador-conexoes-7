@@ -259,11 +259,13 @@ footer .copyright p {
     section.pagina-plano .container {
         display: flex;
         width: 768px;
-        padding: 70px 0px;
+        padding: 50px 0px;
+        margin-left: 0px;
         flex-direction: column;
     }
     
     section.pagina-plano .container .plano {
+        padding-right: 20px;
         
     }
     
