@@ -452,7 +452,15 @@ FIM PAG NORMAL */
   }
 
   .planos .botao a {
-    font-size: 10px;
+    text-decoration: none;
+    background-color: #388E3C;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 80px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
   }
 
   .planos .botao {
@@ -463,68 +471,9 @@ FIM PAG NORMAL */
   /* FIM CARDS */
 
   /* FOOTER */
-  footer .container {
-    background-color: #388e3c;
-    width: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    border: 1px white;
-    align-items: center;
-    padding: 0px;
-  }
+ 
 
-  footer .container .logo-footer img {
-    width: 168px;
-    height: 122px;
-    margin-left: 70px;
-  }
-
-  footer .container .menu {
-    padding: 0px 100px;
-
-  }
-
-  footer .container .menu ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  footer .container .menu ul li {
-    padding: 5px;
-  }
-
-  footer .container .menu ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 19px;
-    font-weight: 700;
-  }
-
-  footer .container p {
-    padding: 50px 30px;
-    max-width: 100%;
-    color: white;
-    text-align: justify;
-    font-size: 14px;
-  }
-
-  footer .copyright {
-    padding: 15px;
-    border: 1px solid white;
-    text-align: center;
-    background-color: #388E3C;
-    padding: 5px;
-  }
-
-  footer .copyright p {
-    color: white;
-    font-weight: bold;
-    font-size: 7px;
-    margin: 10px;
-  }
-
+  
   /* FIM FOOTER */
 
 
@@ -550,6 +499,19 @@ FIM PAG NORMAL */
     width: 900px;
     height: 100px;
   }
+
+  
+.planos .botao a {
+  text-decoration: none;
+  background-color: #388E3C;
+  color: #FFF;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 1px 50px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+}
 
   .planos .apresentacao h2 {
     color: #388E3C;
@@ -591,14 +553,17 @@ FIM PAG NORMAL */
   }
 
   .status .botao a {
-    padding: 10px 100px;
+    padding: 10px 90px;
   }
 
   .status .botao a:hover {
     background-color: #006400;
   }
 
-  /* FIM CONTEUDO */
-
+  #carouselExampleSlidesOnly .carousel-inner .container-banner h2{
+    padding-top: 100px;
+  }
 
 }
+
+  /* FIM CONTEUDO */
