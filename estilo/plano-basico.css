@@ -256,6 +256,27 @@ footer .copyright p {
 
 
 @media(max-width:768px){
+
+    /* HEADER */
+    header .container .logo{
+        width: 27px;
+        height: 25px;
+        padding-bottom: 60px;
+        padding-right: 60px;
+      }
+  
+      header .menu ul li a {
+        font-size: 10px;
+      }
+  
+      img.slide {
+        max-width: 300px;
+        max-height: 100px;
+      }
+      /* FIM HEADER */
+
+
+      /* CONTEUDO */
     section.pagina-plano .container {
         display: flex;
         width: 768px;
@@ -268,18 +289,9 @@ footer .copyright p {
         padding-right: 20px;
         
     }
-    
-    section.pagina-plano .container .plano .conteudo {
-        
-    }
-    
+     
     section.pagina-plano .container .plano .conteudo p {
         font-size: 18px;
-    }
-    
-    
-    section.pagina-plano .container .contato {
-       
     }
     
     section.pagina-plano .container .plano li {
@@ -291,9 +303,9 @@ footer .copyright p {
         color: #388E3C;
         font-weight: 700;
     }
+    /* FIM CONTEUDO */
 
-/* Ajuste do formulário */
-
+/* FORMULARIO */
 .container h2 {
     color: #388E3C;
     font-size: 20px;
@@ -370,7 +382,42 @@ input[type="submit"]:hover {
     height: 50px;
     width: 200px;
 }
+/* FIM FORMULARIO */
 
-    
+/* FOOTER */
+footer .container {
+    background-color: #388e3c;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px white;
+    align-items: center;
+  }
+  
+  footer .container .logo-footer img {
+    width: 72px;
+    height: 122px;
+  }
+  
+  footer .container .menu {
+    display: none;
+  }
+  
+  footer .container p {
+    max-width: 100%;
+    color: white;
+    font-size: 10px;
+  }
+  
+
+  footer .copyright p {
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    margin: 10px;
+  }
+  /* FIM FOOTER */
 }
+/* FIM AJUSTE MOBILE */
 

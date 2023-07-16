@@ -218,7 +218,7 @@ select {
 }
 
 input[type="submit"] {
-    padding: 10px 20px;
+    padding: 5px 20px;
     background-color: #388E3C;
     color: #fff;
     border: none;

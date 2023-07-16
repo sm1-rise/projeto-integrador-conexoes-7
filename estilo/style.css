@@ -31,7 +31,6 @@ header .menu ul li a {
   position: relative;
 }
 
-
 header .menu ul li a::after {
   content: " ";
   position: absolute;
@@ -63,7 +62,7 @@ header .container {
   align-items: center;
   height: 80px;
 }
-
+/* FIM HEADER */
 
 /* INCIO BANNER */
 #carouselExampleSlidesOnly .carousel-inner {
@@ -90,15 +89,9 @@ header .container {
   font-size: 30px;
   text-align: left;
 }
-
 /* FIM BANNER  */
 
-
-/* FIM HEADER */
-
-
 /*INCIO CARDS PLANOS*/
-
 .apresentacao {
   display: flex;
   text-align: center;
@@ -165,7 +158,6 @@ header .container {
 .planos .botao a:hover {
   background-color: #006400;
 }
-
 /*  FIM CARD PLANOS */
 
 /* FORMULARIO */
@@ -250,7 +242,6 @@ input[type="submit"]:hover {
 
 }
 
-
 .form-group option {
   font-size: 14px;
 }
@@ -258,18 +249,16 @@ input[type="submit"]:hover {
 #horario {
   height: 50px;
   width: 310px;
-
 }
 
 #plano {
   height: 50px;
   width: 310px;
 }
-
 /* FIM FORMULARIO */
 
-/* CONTEUDO */
 
+/* CONTEUDO */
 .conteudo .container {
   display: flex;
   justify-content: center;
@@ -321,11 +310,9 @@ conteudo .container .status {
 .status .botao a:hover {
   background-color: #006400;
 }
-
 /* FIM CONTEUDO */
 
 /* FOOTER */
-
 footer .container {
   background-color: #388e3c;
   width: 100%;
@@ -386,17 +373,13 @@ footer .copyright p {
   font-size: 7px;
   margin: 10px;
 }
-
 /* FIM FOOTER */
-
-/* 
-FIM PAG NORMAL */
+/* FIM PAG NORMAL */
 
 
 /* AJUSTE TAMANHO ATE 1100PX */
-
-
 @media(max-width:1100px) {
+  /* BANNER */
   img.slide {
     max-width: 600px;
   }
@@ -412,10 +395,9 @@ FIM PAG NORMAL */
     font-size: 20px;
     text-align: left;
   }
-
+  /* FIM BANNER */
 
   /* CARDS */
-
   .apresentacao {
     display: flex;
     text-align: center;
@@ -429,7 +411,6 @@ FIM PAG NORMAL */
     color: #388E3C;
     font-size: 35px;
     margin-top: 35px;
-
   }
 
   .planos article {
@@ -467,31 +448,23 @@ FIM PAG NORMAL */
     max-width: 179px;
     padding-left: 50px;
   }
-
   /* FIM CARDS */
-
-  /* FOOTER */
- 
-
-  
-  /* FIM FOOTER */
-
-
 }
-
 /*FIM AJUSTE DE TELA 1100PX */
 
 
 /* AJUSTE TAMANHO DE TELA 900PX */
-
 @media(max-width:900px) {
-
+  /* BANNER */
   img.slide {
     max-width: 400px;
   }
 
-  /* CARDS */
+  #carouselExampleSlidesOnly .carousel-inner .container-banner h2{
+    padding-top: 100px;
+  }
 
+  /* CARDS */
   .apresentacao {
     display: flex;
     text-align: center;
@@ -500,7 +473,6 @@ FIM PAG NORMAL */
     height: 100px;
   }
 
-  
 .planos .botao a {
   text-decoration: none;
   background-color: #388E3C;
@@ -528,12 +500,9 @@ FIM PAG NORMAL */
     margin: 0px 30px;
     box-shadow: 10px 5px 5px rgb(210, 210, 210);
   }
-
-
   /* FIM CARDS */
 
   /* IMAGEM FORMULARIO */
-
   .img-vertical {
     width: 300px;
     height: 300px;
@@ -542,11 +511,9 @@ FIM PAG NORMAL */
     background-position: right;
     margin-left: 100px;
   }
-
   /* FIM IMAGEM FORMULARIO */
 
   /* CONTEUDO */
-
   .conteudo .container {
     width: 900px;
     max-width: 100%;
@@ -559,27 +526,31 @@ FIM PAG NORMAL */
   .status .botao a:hover {
     background-color: #006400;
   }
-
-  #carouselExampleSlidesOnly .carousel-inner .container-banner h2{
-    padding-top: 100px;
-  }
-
-}
-
   /* FIM CONTEUDO */
-/* 
-  FIM AJUSTE 900P */
+}
+  /* FIM AJUSTE 900P */
 
   /* AJUSTE 768P MOBILE */
-
-  /* HEADER */
   @media(max-width:768px){
+    /* HEADER */
+    header .container .logo{
+      width: 27px;
+      height: 25px;
+      padding-bottom: 60px;
+      padding-right: 60px;
+    }
+
+    header .menu ul li a {
+      font-size: 10px;
+    }
 
     img.slide {
       max-width: 300px;
       max-height: 100px;
     }
-  
+    /* FIM HEADER */
+
+    /* BANNER */
     #carouselExampleSlidesOnly .carousel-inner .container-banner h2 {
       padding: 0px;
       font-size: 15px;
@@ -591,19 +562,19 @@ FIM PAG NORMAL */
       font-size: 10px;
       text-align: left;
     }
-  
+    /* FIM BANNER */
   
     /* CARDS */
-  
-
-
     .apresentacao {
-      display: flex;
-      text-align: center;
-      justify-content: center;
+      align-items: center;
       width: 768px;
       margin:0px -100px;
       padding: 0px;
+    }
+
+    .planos .lista-planos{
+      display: flex;
+      flex-wrap: wrap;
     }
 
     .planos .lista-planos .texto-plano{
@@ -661,78 +632,148 @@ FIM PAG NORMAL */
       max-width: 179px;
       padding-left: 50px;
     }
+    /* FIM CARDS */
 
     /* forms */
-    
-    .formulario {
-      padding: 40px;
+    container h2 {
+      color: #388E3C;
+      font-size: 20px;
+  }
+  
+  .formulario {
+      padding: 30px;
       border-radius: 10px;
       background-color: #fff;
       border: 1px solid rgb(210, 210, 210);
       box-shadow: 10px 5px 5px rgb(210, 210, 210);
-    }
-    
-    .form-group {
-    
+      width: 250px;
+  }
+  
+  .form-group {
+  
       margin-bottom: 20px;
       color: #000;
       font-size: 14px;
       font-weight: 700;
-    }
-    
-    label {
-      width: 289px;
+  }
+  
+  label {
+      width: 200px;
       height: 30px;
       flex-shrink: 0;
       display: block;
-      margin-bottom: 5px;
-    }
-    
-    input[type="text"],
-    select {
-      width: 289px;
+      margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  select {
+      width: 200px;
       height: 30px;
       padding: 10px;
       border: 1px solid #388E3C;
       border-radius: 5px;
       flex-shrink: 0;
-    }
-    
-    input[type="submit"] {
-      padding: 5px 20px;
+  }
+  
+  input[type="submit"] {
+      padding: 10px 20px;
       background-color: #388E3C;
       color: #fff;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      width: 310px;
+      width: 200px;
       height: 35px;
       flex-shrink: 0;
       text-align: center;
       font-size: 14px;
-    
+  
       font-weight: 700;
-    }
-    
-    input[type="submit"]:hover {
-      background-color: #006400;
-    
-    }
-    
-    
-    .form-group option {
-      font-size: 14px;
-    }
-    
-    #horario {
-      height: 50px;
-      width: 310px;
-    
-    }
-    
-    #plano {
-      height: 50px;
-      width: 310px;
-    }
-    
   }
+  
+  input[type="submit"]:hover {
+      background-color: #006400;
+  }
+  
+  
+  .form-group option {
+      font-size: 14px;
+  }
+  
+  #horario {
+      height: 50px;
+      width: 200px;
+  
+  }
+  
+  #plano {
+      height: 50px;
+      width: 200px;
+  }
+
+  .img-vertical {
+    display: none;
+  }
+  /* FIM FORMS */
+
+  /* CONTEUDO */
+  .conteudo .container{
+    width: 768px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .conteudo .container .status{
+    padding:15px
+  }
+  .conteudo .container .imagem-conteudo{
+      display: none;
+  }
+
+  .conteudo .container h3{
+    font-size: 25px;
+  }
+
+  .status .botao a {
+    font-size: 15px;
+    padding: 8px 50px;
+  }
+  /* FIM CONTEUDO */
+
+  /* FOOTER */
+  footer .container {
+    background-color: #388e3c;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px white;
+    align-items: center;
+  }
+  
+  footer .container .logo-footer img {
+    width: 72px;
+    height: 122px;
+  }
+  
+  footer .container .menu {
+    display: none;
+  }
+  
+  footer .container p {
+    max-width: 100%;
+    color: white;
+    font-size: 10px;
+  }
+  
+
+  footer .copyright p {
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    margin: 10px;
+  }
+  /* FIM FOOTER */
+  }
+  /* FIM AJUSTE MOBILE */
