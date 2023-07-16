@@ -574,7 +574,6 @@ footer .copyright p {
 
     .planos .lista-planos{
       display: flex;
-      flex-wrap: wrap;
     }
 
     .planos .lista-planos .texto-plano{

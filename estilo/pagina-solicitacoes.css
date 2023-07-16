@@ -65,116 +65,35 @@ header .container {
     height: 80px;
 }
 
-
-/* INCIO BANNER */
-#carouselExampleSlidesOnly .carousel-inner {
-    width: 100%;
-    background: linear-gradient(rgb(144, 144, 250), rgb(255, 255, 255))
-}
-
-#carouselExampleSlidesOnly .carousel-inner .container-banner {
-    margin-top: 50px;
-    width: 1200px;
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    /* | row-reverse | column | column-reverse; */
-}
-
-
-#carouselExampleSlidesOnly .carousel-inner
-/* FIM BANNER  */
-
-
-/* FIM HEADER */
-
-
-/*INCIO CARDS PLANOS*/
-
-.apresentacao {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 1200px;
-    height: 100px;
-}
-
-.planos .lista-planos {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.planos .apresentacao h2 {
-    color: #388E3C;
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 65px;
-    text-align: center;
-}
-
-.planos article {
-    width: 300px;
-    text-align: left;
-    border: 1px solid rgb(210, 210, 210);
-    border-radius: 10px 100px / 120px;
-    margin: 50px;
-    padding: 40px;
-    box-shadow: 10px 5px 5px rgb(210, 210, 210);
-}
-
-.planos {
+section .container-status {
+    padding: 100px 300px;
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
-.planos article h3 {
-    font-size: 22px;
-}
-
-.planos .preco p {
-    font-size: 30px;
-    font-style: italic;
+section h1{
     color: #388E3C;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
 }
 
-.planos .botao a {
-    text-decoration: none;
-    background-color: #388E3C;
-    color: #FFF;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px 25px;
-    border-radius: 40px;
-    display: flex;
-    justify-content: center;
+section p{
+    padding-right: 20px;
+    font-size: 22px;
+    font-weight: 400;
 }
-
-/*  FIM CARD PLANOS */
 
 /* FORMULARIO */
 .container {
     width: 1200px;
     padding: 40px;
     margin: 0 auto;
-
 }
 
 .container h2 {
     color: #388E3C;
-}
-
-.img-vertical {
-    width: 500px;
-    height: 500px;
-    background-image: url(/imagens/ilustra_contrato.svg);
-    background-size: cover;
-    background-position: right;
-    margin-left: 100px;
 }
 
 section .container {
@@ -209,7 +128,7 @@ label {
 
 input[type="text"],
 select {
-    width: 289px;
+    width: 310px;
     height: 30px;
     padding: 10px;
     border: 1px solid #388E3C;
@@ -229,7 +148,6 @@ input[type="submit"] {
     flex-shrink: 0;
     text-align: center;
     font-size: 14px;
-
     font-weight: 700;
 }
 
@@ -238,75 +156,8 @@ input[type="submit"]:hover {
 
 }
 
-
-.form-group option {
-    font-size: 14px;
-}
-
-#horario {
-    height: 50px;
-    width: 310px;
-
-}
-
-#plano {
-    height: 50px;
-    width: 310px;
-}
-
 /* FIM FORMULARIO */
 
-/* CONTEUDO */
-
-.conteudo .container {
-    display: flex;
-    justify-content: center;
-    padding: 22px;
-    font-family: 'Raleway', sans-serif;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-left: 45px;
-    margin-top: 50px;
-}
-
-.conteudo {
-    background: linear-gradient(0deg, rgba(174, 236, 238, 1) 0%, rgba(144, 144, 250, 0) 100%);
-}
-
-conteudo .container .status {
-    padding-left: 100px;
-    padding-top: 30px;
-}
-
-.status {
-    padding-left: 100px;
-}
-
-.status h3 {
-    font-size: 40px;
-    padding-bottom: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #388E3C;
-    margin-top: 10px;
-}
-
-.status p {
-    margin-bottom: 30px;
-    text-align: left;
-    overflow-wrap: break-word;
-}
-
-.status .botao a {
-    background-color: #388E3C;
-    text-decoration: none;
-    color: white;
-    padding: 10px 130px;
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-/* FIM CONTEUDO */
 
 /* FOOTER */
 
@@ -373,6 +224,176 @@ footer .copyright p {
 
 /* FIM FOOTER */
 
-
-
 /* PAGINA SOLICITAÇOES */
+@media (max-width:1100px) {
+    section h1{
+        padding-right: 30px;
+    }
+    
+    section p{
+        font-size: 22px;
+        font-weight: 400;
+        padding-right: 50px;
+    }
+    
+    /* FORMULARIO */
+    .container {
+        width: 1100px;
+        padding: 40px;
+        margin: 0 auto;
+    }
+    
+    /* FIM FORMULARIO */
+}
+
+@media (max-width:768px){
+
+    /* HEADER */
+    header .container .logo{
+        width: 27px;
+        height: 25px;
+        padding-bottom: 60px;
+        padding-right: 60px;
+      }
+  
+      header .menu ul li a {
+        font-size: 10px;
+      }
+  
+      img.slide {
+        max-width: 300px;
+        max-height: 100px;
+      }
+      /* FIM HEADER */
+
+
+    section .container-status {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding: 35px 15px;
+    }
+
+
+    section h1{
+        color: #388E3C;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    section p{
+        padding-right: 35px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    /* FORMULARIO */
+    .container {
+        width: 768px;
+        padding: 40px;
+        margin: 0 auto;
+    }
+    
+    .container h2 {
+        color: #388E3C;
+    }
+    
+    section .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .formulario {
+        padding: 40px;
+        border-radius: 10px;
+        background-color: #fff;
+        border: 1px solid rgb(210, 210, 210);
+        box-shadow: 10px 5px 5px rgb(210, 210, 210);
+    }
+    
+    .form-group {
+    
+        margin-bottom: 20px;
+        color: #000;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    label {
+        width: 150px;
+        height: 20px;
+    }
+    
+    input[type="text"],
+    select {
+        width: 200px;
+        height: 30px;
+        padding: 10px;
+        border: 1px solid #388E3C;
+        border-radius: 5px;
+        flex-shrink: 0;
+    }
+    
+    input[type="submit"] {
+        padding: 5px 20px;
+        background-color: #388E3C;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 200px;
+        height: 35px;
+        flex-shrink: 0;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #006400;
+    }
+
+    /* FOOTER */
+footer .container {
+    background-color: #388e3c;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px white;
+    align-items: center;
+  }
+  
+  footer .container .logo-footer img {
+    width: 72px;
+    height: 122px;
+  }
+  
+  footer .container .menu {
+    display: none;
+  }
+  
+  footer .container p {
+    max-width: 100%;
+    color: white;
+    font-size: 10px;
+  }
+  
+
+  footer .copyright p {
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    margin: 10px;
+  }
+  /* FIM FOOTER */
+    
+}
