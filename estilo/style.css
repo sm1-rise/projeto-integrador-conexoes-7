@@ -62,6 +62,7 @@ header .container {
   align-items: center;
   height: 80px;
 }
+
 /* FIM HEADER */
 
 /* INCIO BANNER */
@@ -89,6 +90,7 @@ header .container {
   font-size: 30px;
   text-align: left;
 }
+
 /* FIM BANNER  */
 
 /*INCIO CARDS PLANOS*/
@@ -158,6 +160,7 @@ header .container {
 .planos .botao a:hover {
   background-color: #006400;
 }
+
 /*  FIM CARD PLANOS */
 
 /* FORMULARIO */
@@ -175,7 +178,7 @@ header .container {
 .img-vertical {
   width: 500px;
   height: 500px;
-  background-image: url(/imagens/ilustra_contrato.svg);
+  background-image: url(./imagens/ilustra_contrato.svg);
   background-size: cover;
   background-position: right;
   margin-left: 100px;
@@ -255,6 +258,7 @@ input[type="submit"]:hover {
   height: 50px;
   width: 310px;
 }
+
 /* FIM FORMULARIO */
 
 
@@ -310,6 +314,7 @@ conteudo .container .status {
 .status .botao a:hover {
   background-color: #006400;
 }
+
 /* FIM CONTEUDO */
 
 /* FOOTER */
@@ -373,12 +378,14 @@ footer .copyright p {
   font-size: 7px;
   margin: 10px;
 }
+
 /* FIM FOOTER */
 /* FIM PAG NORMAL */
 
 
 /* AJUSTE TAMANHO ATE 1100PX */
 @media(max-width:1100px) {
+
   /* BANNER */
   img.slide {
     max-width: 600px;
@@ -395,6 +402,7 @@ footer .copyright p {
     font-size: 20px;
     text-align: left;
   }
+
   /* FIM BANNER */
 
   /* CARDS */
@@ -448,19 +456,22 @@ footer .copyright p {
     max-width: 179px;
     padding-left: 50px;
   }
+
   /* FIM CARDS */
 }
+
 /*FIM AJUSTE DE TELA 1100PX */
 
 
 /* AJUSTE TAMANHO DE TELA 900PX */
 @media(max-width:900px) {
+
   /* BANNER */
   img.slide {
     max-width: 400px;
   }
 
-  #carouselExampleSlidesOnly .carousel-inner .container-banner h2{
+  #carouselExampleSlidesOnly .carousel-inner .container-banner h2 {
     padding-top: 100px;
   }
 
@@ -473,17 +484,17 @@ footer .copyright p {
     height: 100px;
   }
 
-.planos .botao a {
-  text-decoration: none;
-  background-color: #388E3C;
-  color: #FFF;
-  font-size: 10px;
-  font-weight: bold;
-  padding: 1px 50px;
-  border-radius: 40px;
-  display: flex;
-  justify-content: center;
-}
+  .planos .botao a {
+    text-decoration: none;
+    background-color: #388E3C;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 1px 50px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+  }
 
   .planos .apresentacao h2 {
     color: #388E3C;
@@ -500,6 +511,7 @@ footer .copyright p {
     margin: 0px 30px;
     box-shadow: 10px 5px 5px rgb(210, 210, 210);
   }
+
   /* FIM CARDS */
 
   /* IMAGEM FORMULARIO */
@@ -511,6 +523,7 @@ footer .copyright p {
     background-position: right;
     margin-left: 100px;
   }
+
   /* FIM IMAGEM FORMULARIO */
 
   /* CONTEUDO */
@@ -526,211 +539,219 @@ footer .copyright p {
   .status .botao a:hover {
     background-color: #006400;
   }
+
   /* FIM CONTEUDO */
 }
-  /* FIM AJUSTE 900P */
 
-  /* AJUSTE 768P MOBILE */
-  @media(max-width:768px){
-    /* HEADER */
-    header .container .logo{
-      width: 27px;
-      height: 25px;
-      padding-bottom: 60px;
-      padding-right: 60px;
-    }
+/* FIM AJUSTE 900P */
 
-    header .menu ul li a {
-      font-size: 10px;
-    }
+/* AJUSTE 768P MOBILE */
+@media(max-width:768px) {
 
-    img.slide {
-      max-width: 300px;
-      max-height: 100px;
-    }
-    /* FIM HEADER */
-
-    /* BANNER */
-    #carouselExampleSlidesOnly .carousel-inner .container-banner h2 {
-      padding: 0px;
-      font-size: 15px;
-      font-weight: bold;
-      color: white;
-    }
-  
-    #carouselExampleSlidesOnly .carousel-inner .container-banner p {
-      font-size: 10px;
-      text-align: left;
-    }
-    /* FIM BANNER */
-  
-    /* CARDS */
-    .apresentacao {
-      align-items: center;
-      width: 768px;
-      margin:0px -100px;
-      padding: 0px;
-    }
-
-    .planos .lista-planos{
-      display: flex;
-    }
-
-    .planos .lista-planos .texto-plano{
-      font-size: 10px;
-    }
-
-    .planos .lista-planos .vantagens{
-      font-size: 10px;
-    }
-
-    .planos .lista-planos .imagem-plano img {
-      width: 200px;
-      height: 75px;
-    }
-  
-    .planos .apresentacao h2 {
-      color: #388E3C;
-      font-size: 14px;
-      margin-top: 35px;
-    }
-  
-    .planos article {
-      width: 200px;
-      text-align: center;
-      border: 1px solid rgb(210, 210, 210);
-      border-radius: 10px 100px / 120px;
-      margin: 10px 100px;
-      box-shadow: 10px 5px 5px rgb(210, 210, 210);
-      padding: 15px;
-    }
-  
-    .planos article h3 {
-      padding: 7px 15px;
-      font-size: 15px;
-    }
-  
-    .planos .preco p {
-      font-size: 20px;
-      padding-left: 20px;
-    }
-  
-    .planos .botao a {
-      text-decoration: none;
-      background-color: #388E3C;
-      color: #FFF;
-      font-size: 10px;
-      font-weight: bold;
-      padding: 1px 1px;
-      border-radius: 40px;
-      display: flex;
-      justify-content: center;
-    }
-  
-    .planos .botao {
-      max-width: 179px;
-      padding-left: 50px;
-    }
-    /* FIM CARDS */
-
-    /* forms */
-    container h2 {
-      color: #388E3C;
-      font-size: 20px;
+  /* HEADER */
+  header .container .logo {
+    width: 27px;
+    height: 25px;
+    padding-bottom: 60px;
+    padding-right: 60px;
   }
-  
+
+  header .menu ul li a {
+    font-size: 10px;
+  }
+
+  img.slide {
+    max-width: 300px;
+    max-height: 100px;
+  }
+
+  /* FIM HEADER */
+
+  /* BANNER */
+  #carouselExampleSlidesOnly .carousel-inner .container-banner h2 {
+    padding: 0px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+  }
+
+  #carouselExampleSlidesOnly .carousel-inner .container-banner p {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  /* FIM BANNER */
+
+  /* CARDS */
+  .apresentacao {
+    align-items: center;
+    width: 768px;
+    margin: 0px -100px;
+    padding: 0px;
+  }
+
+  .planos .lista-planos {
+    display: flex;
+  }
+
+  .planos .lista-planos .texto-plano {
+    font-size: 10px;
+  }
+
+  .planos .lista-planos .vantagens {
+    font-size: 10px;
+  }
+
+  .planos .lista-planos .imagem-plano img {
+    width: 200px;
+    height: 75px;
+  }
+
+  .planos .apresentacao h2 {
+    color: #388E3C;
+    font-size: 14px;
+    margin-top: 35px;
+  }
+
+  .planos article {
+    width: 200px;
+    text-align: center;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 10px 100px / 120px;
+    margin: 10px 100px;
+    box-shadow: 10px 5px 5px rgb(210, 210, 210);
+    padding: 15px;
+  }
+
+  .planos article h3 {
+    padding: 7px 15px;
+    font-size: 15px;
+  }
+
+  .planos .preco p {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  .planos .botao a {
+    text-decoration: none;
+    background-color: #388E3C;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 1px 1px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .planos .botao {
+    max-width: 179px;
+    padding-left: 50px;
+  }
+
+  /* FIM CARDS */
+
+  /* forms */
+  container h2 {
+    color: #388E3C;
+    font-size: 20px;
+  }
+
   .formulario {
-      padding: 30px;
-      border-radius: 10px;
-      background-color: #fff;
-      border: 1px solid rgb(210, 210, 210);
-      box-shadow: 10px 5px 5px rgb(210, 210, 210);
-      width: 250px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid rgb(210, 210, 210);
+    box-shadow: 10px 5px 5px rgb(210, 210, 210);
+    width: 250px;
   }
-  
+
   .form-group {
-  
-      margin-bottom: 20px;
-      color: #000;
-      font-size: 14px;
-      font-weight: 700;
+
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
   }
-  
+
   label {
-      width: 200px;
-      height: 30px;
-      flex-shrink: 0;
-      display: block;
-      margin-bottom: 20px;
+    width: 200px;
+    height: 30px;
+    flex-shrink: 0;
+    display: block;
+    margin-bottom: 20px;
   }
-  
+
   input[type="text"],
   select {
-      width: 200px;
-      height: 30px;
-      padding: 10px;
-      border: 1px solid #388E3C;
-      border-radius: 5px;
-      flex-shrink: 0;
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #388E3C;
+    border-radius: 5px;
+    flex-shrink: 0;
   }
-  
+
   input[type="submit"] {
-      padding: 10px 20px;
-      background-color: #388E3C;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      width: 200px;
-      height: 35px;
-      flex-shrink: 0;
-      text-align: center;
-      font-size: 14px;
-  
-      font-weight: 700;
+    padding: 10px 20px;
+    background-color: #388E3C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    height: 35px;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 14px;
+
+    font-weight: 700;
   }
-  
+
   input[type="submit"]:hover {
-      background-color: #006400;
+    background-color: #006400;
   }
-  
-  
+
+
   .form-group option {
-      font-size: 14px;
+    font-size: 14px;
   }
-  
+
   #horario {
-      height: 50px;
-      width: 200px;
-  
+    height: 50px;
+    width: 200px;
+
   }
-  
+
   #plano {
-      height: 50px;
-      width: 200px;
+    height: 50px;
+    width: 200px;
   }
 
   .img-vertical {
     display: none;
   }
+
   /* FIM FORMS */
 
   /* CONTEUDO */
-  .conteudo .container{
+  .conteudo .container {
     width: 768px;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .conteudo .container .status{
-    padding:15px
-  }
-  .conteudo .container .imagem-conteudo{
-      display: none;
+  .conteudo .container .status {
+    padding: 15px
   }
 
-  .conteudo .container h3{
+  .conteudo .container .imagem-conteudo {
+    display: none;
+  }
+
+  .conteudo .container h3 {
     font-size: 25px;
   }
 
@@ -738,6 +759,7 @@ footer .copyright p {
     font-size: 15px;
     padding: 8px 50px;
   }
+
   /* FIM CONTEUDO */
 
   /* FOOTER */
@@ -750,22 +772,22 @@ footer .copyright p {
     border: 1px white;
     align-items: center;
   }
-  
+
   footer .container .logo-footer img {
     width: 72px;
     height: 122px;
   }
-  
+
   footer .container .menu {
     display: none;
   }
-  
+
   footer .container p {
     max-width: 100%;
     color: white;
     font-size: 10px;
   }
-  
+
 
   footer .copyright p {
     color: white;
@@ -773,6 +795,8 @@ footer .copyright p {
     font-size: 10px;
     margin: 10px;
   }
+
   /* FIM FOOTER */
-  }
-  /* FIM AJUSTE MOBILE */
+}
+
+/* FIM AJUSTE MOBILE */
