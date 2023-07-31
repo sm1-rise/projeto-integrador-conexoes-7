@@ -1,5 +1,6 @@
 * header
 * botão {
+	passar estilo como propriedade
 	- ver detalhe
 	- atender solictação
 	- voltar
