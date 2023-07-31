@@ -1,0 +1,11 @@
+* header
+* botão {
+	- ver detalhe
+	- atender solictação
+	- voltar
+	- entrar
+	}
+* texto/titulo
+* formulario (login / solicitação )
+* tabela
+
