@@ -557,7 +557,7 @@ footer .copyright p {
   }
 
   header .menu ul li a {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   img.slide {
@@ -595,11 +595,11 @@ footer .copyright p {
   }
 
   .planos .lista-planos .texto-plano {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .planos .lista-planos .vantagens {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .planos .lista-planos .imagem-plano img {
@@ -637,7 +637,7 @@ footer .copyright p {
     text-decoration: none;
     background-color: #388E3C;
     color: #FFF;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     padding: 1px 1px;
     border-radius: 40px;
@@ -785,14 +785,14 @@ footer .copyright p {
   footer .container p {
     max-width: 100%;
     color: white;
-    font-size: 10px;
+    font-size: 12px;
   }
 
 
   footer .copyright p {
     color: white;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 12px;
     margin: 10px;
   }
 
