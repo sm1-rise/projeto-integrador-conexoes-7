@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Button from "../Botao";
 import { Form, Container } from "./style";
 import { FormEventHandler, useState } from "react";
 
@@ -7,7 +7,6 @@ export default function FormService() {
         <>
             <Container>
                 <Form>
-
                     <label>Nome do Cliente</label>
                     <input
                         type="text"
