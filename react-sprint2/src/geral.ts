@@ -10,10 +10,9 @@ export const GlobalStyle = createGlobalStyle`
 
 
 body{
-    
+    background: #F2F2F2;
         padding: 0;
         margin: 0;
         font-family: 'Raleway', sans-serif;
-
     }
 `;
