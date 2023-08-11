@@ -15,9 +15,13 @@ const DefStyle = {
         padding: 10px 122px;
         background-color:  #000;
         `
+};
+
+interface ContainerProps {
+    type: keyof typeof DefStyle;
 }
 
-export const Container = styled.button`
+export const Container = styled.button<ContainerProps>`
     font-size:14px;
     padding: 10px 122px;
     margin-top: 20px;
@@ -27,5 +31,5 @@ export const Container = styled.button`
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 
-    ${props => DefStyle[props.type]}
-`
+    ${(props) => DefStyle[props.type]} 
+`;

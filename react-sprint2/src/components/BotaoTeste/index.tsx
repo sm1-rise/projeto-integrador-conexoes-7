@@ -1,4 +1,4 @@
-import { Styled } from "styled-components/dist/constructors/constructWithOptions";
+
 import { Container } from "./style";
 import styled from "styled-components";
 import { CSS } from "styled-components/dist/types";
@@ -13,7 +13,7 @@ export default function BotaoTeste({
     text = "enviar"
 }: TextoBotaoProps) {
     return <>
-        <Container>
+        <Container type="secondary">
             {text}
         </Container>
     </>
