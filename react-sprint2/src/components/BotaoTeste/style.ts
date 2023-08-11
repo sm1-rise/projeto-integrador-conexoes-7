@@ -1,6 +1,4 @@
-import { CSSProperties } from "react"
 import styled from "styled-components";
-import { GlobalStyle } from "../../geral";
 import { css } from "@emotion/react";
 
 
@@ -15,14 +13,12 @@ const DefStyle = {
         font-size:14px;
         color:#fff;
         padding: 10px 122px;
-        background-color:  #556FF5;
-        `,
-
+        background-color:  #000;
+        `
 }
 
 export const Container = styled.button`
     font-size:14px;
-    color:white;
     padding: 10px 122px;
     margin-top: 20px;
     border: 1px #556FF5;
@@ -31,6 +27,5 @@ export const Container = styled.button`
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 
-   
-
+    ${props => DefStyle[props.type]}
 `
