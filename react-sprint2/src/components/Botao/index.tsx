@@ -16,7 +16,6 @@ export default function Botao({
 }: ButtonProps) {
     onClick
     return <>{visible &&
-
         <Btt onClick={onClick}>{text}</Btt>}
 
     </>

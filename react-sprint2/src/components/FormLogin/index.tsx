@@ -1,5 +1,6 @@
 import BotaoTeste from "../BotaoTeste";
-import { Form, Container, CamposForm } from "./style";
+import { BotaoPainel } from "../BotaoTeste/style";
+import { Form, CamposForm, Container } from "./style";
 import { FormEventHandler, useState } from "react";
 
 
@@ -35,8 +36,12 @@ export default function LoginAcesso() {
                             value={senha}
                             onChange={(e) => setSenha(e.target.value)}
                         />
+
                     </CamposForm>
                     <BotaoTeste text="entrar" />
+                    <BotaoPainel>ver detalhe</BotaoPainel>
+
+
                 </Form>
             </Container >
         </>
