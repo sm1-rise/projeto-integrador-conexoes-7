@@ -1,0 +1,6 @@
+Argument of type '(props: ExecutionContext & FastOmit<DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>, "type"> & ContainerProps) => SerializedStyles' is not assignable to parameter of type 'Interpolation<Substitute<DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>, ContainerProps>>'.
+  Type '(props: ExecutionContext & FastOmit<DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>, "type"> & ContainerProps) => SerializedStyles' is not assignable to type 'StyleFunction<Substitute<DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>, ContainerProps>>'.
+    Type 'SerializedStyles' is not assignable to type 'Interpolation<object>'.
+      Type 'SerializedStyles' is not assignable to type 'StyledObject<object>'.
+        Type 'SerializedStyles' is not assignable to type '{ [key: string]: string | number | RuleSet<any> | StyleFunction<object> | StyledObject<object> | undefined; }'.
+          Index signature for type 'string' is missing in type 'SerializedStyles'.
