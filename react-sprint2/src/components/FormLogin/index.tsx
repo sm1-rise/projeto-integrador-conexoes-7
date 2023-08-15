@@ -1,5 +1,5 @@
 import BotaoTeste from "../BotaoTeste";
-import { BotaoPainel } from "../BotaoTeste/style";
+import { BotaoDetalhe, BotaoPainel } from "../BotaoTeste/style";
 import { Form, CamposForm, Container } from "./style";
 import { FormEventHandler, useState } from "react";
 
@@ -40,7 +40,7 @@ export default function LoginAcesso() {
                     </CamposForm>
                     <BotaoTeste text="entrar" />
                     <BotaoPainel>ver detalhe</BotaoPainel>
-
+                    <BotaoDetalhe>voltar</BotaoDetalhe>
 
                 </Form>
             </Container >

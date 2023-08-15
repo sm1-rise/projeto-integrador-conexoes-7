@@ -35,7 +35,16 @@ export const Container = styled.button`
 `;
 
 export const BotaoPainel = styled(Container)`
-    background-color:#000;
+    background-color:green;
     color:#fff;
     padding: 10px 10px;
 `
+
+
+export const BotaoDetalhe = styled(Container)`
+    background-color:#CACACA;
+    color:#fff;
+    padding: 10px 10px;
+    cursor:unset;
+`
+

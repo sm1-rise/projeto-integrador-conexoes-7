@@ -5,7 +5,7 @@ export const Form = styled.form`
   background-color: #fff;
   padding: 30px 35px;
   margin: 50px 0;
-  border: 1px solid #b4b4b4;
+  border: 1px solid blue;
   border-radius: 15px;
 
   input {
