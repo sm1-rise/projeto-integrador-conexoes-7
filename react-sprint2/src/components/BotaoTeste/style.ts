@@ -35,16 +35,18 @@ export const Container = styled.button`
 `;
 
 export const BotaoPainel = styled(Container)`
-    background-color:green;
-    color:#fff;
-    padding: 10px 10px;
+    background-color:#fff;
+    color:#556FF5;
+    font-size:12px;
+    padding: 7px 4px;
+    border: 1px solid #556FF5;
 `
 
-
-export const BotaoDetalhe = styled(Container)`
-    background-color:#CACACA;
-    color:#fff;
-    padding: 10px 10px;
-    cursor:unset;
+export const BotaoPainel2 = styled(Container)`
+    background-color:#fff;
+    color:#388E3C;
+    font-size:12px;
+    padding: 7px 4px;
+    border: 1px solid #388E3C;
 `
 

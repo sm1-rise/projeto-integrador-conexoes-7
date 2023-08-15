@@ -39,9 +39,6 @@ export default function LoginAcesso() {
 
                     </CamposForm>
                     <BotaoTeste text="entrar" />
-                    <BotaoPainel>ver detalhe</BotaoPainel>
-                    <BotaoDetalhe>voltar</BotaoDetalhe>
-
                 </Form>
             </Container >
         </>
