@@ -41,8 +41,8 @@ export default function FormService() {
                         value="  Aguardando agendamento"
                         disabled
                     />
-                     <Button text="voltar" />
-                <Button text="atender solicitação" />
+                    <Button text="voltar" />
+                <Button text="atender solicitação" /> 
                 </Form>
             
             </Container>
