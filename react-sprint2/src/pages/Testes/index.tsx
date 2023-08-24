@@ -1,6 +1,6 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import BotaoTeste from "../../components/BotaoTeste";
+import BotaoTeste from "../../components/Botao";
 
 export default function Teste() {
     return (

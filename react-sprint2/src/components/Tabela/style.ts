@@ -45,6 +45,11 @@ export const HeadTabela = styled.div`
          text-align: center;  
          background: #556ff5;
     }
+`
 
+export const PosicaoBotao = styled.div`
+  td{
+    padding-bottom:20px;
+  }
 `
 

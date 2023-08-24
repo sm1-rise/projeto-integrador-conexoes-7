@@ -1,5 +1,5 @@
-import Botao from '../Botao';
-import { ContainerTabela, HeadTabela, Info } from './style';
+
+import { ContainerTabela, HeadTabela, Info, PosicaoBotao } from './style';
 
 function createData(
     codigoPedido: string,
@@ -21,8 +21,6 @@ const pedidos = [
 
 export default function Tabela() {
     return (
-
-
         <>
             <ContainerTabela>
                 <Info>
@@ -34,11 +32,8 @@ export default function Tabela() {
                                 <th align="right">Serviço solicitado</th>
                                 <th align="right">Data da contratação</th>
                                 <th align="right">Status</th>
-
                             </tr>
                         </thead>
-
-
                         {pedidos.map((row) => (
                             <tbody key={row.codigoPedido} >
                                 <tr>
@@ -47,13 +42,19 @@ export default function Tabela() {
                                     <td align="right">{row.servicoSolicitado}</td>
                                     <td align="right">{row.data}</td>
                                     <td align="right">{row.status}</td>
-                                    <td> <Botao visible={true} destructive={true} text='detalhes' /> </td>
-                                    <td> <Botao visible={true} destructive={false} text='relatorio' onClick={() => console.log("clicou")} /> </td>
+                                    <PosicaoBotao>
+
+                                    </PosicaoBotao>
+
                                 </tr>
+
                             </tbody>
                         ))}
+
                     </table>
+
                 </Info>
+
             </ContainerTabela >
         </>
     );
