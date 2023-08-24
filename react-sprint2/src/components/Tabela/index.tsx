@@ -1,5 +1,4 @@
-import Botao from '../Botao';
-import { BotaoPainel, BotaoPainel2 } from '../BotaoTeste/style';
+
 import { ContainerTabela, HeadTabela, Info, PosicaoBotao } from './style';
 
 function createData(
@@ -44,8 +43,7 @@ export default function Tabela() {
                                     <td align="right">{row.data}</td>
                                     <td align="right">{row.status}</td>
                                     <PosicaoBotao>
-                                        <td align='left'> <BotaoPainel>ver detalhes</BotaoPainel></td>
-                                        <td align='left'> <BotaoPainel2>atender solicitação</BotaoPainel2></td>
+
                                     </PosicaoBotao>
 
                                 </tr>

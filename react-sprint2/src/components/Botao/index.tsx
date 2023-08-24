@@ -1,22 +1,21 @@
-import { Btt } from "./style"
 
+import { BotaoPainelAzul, BotaoLogin, BotaoPainelVerde, BotaoCinza, } from "./style";
 
-interface ButtonProps {
-    text: string;
-    visible?: boolean
-    onClick?: () => void
-
+interface TextoBotaoProps {
+    type: string;
+    text: string,
+    onClick?: () => void,
 }
 
-export default function Botao({
-    text = "ver detalhes",
-    visible = true,
-    onClick,
-
-}: ButtonProps) {
-    onClick
-    return <>{visible &&
-        <Btt onClick={onClick}>{text}</Btt>}
-
-    </>
+export default function Botao({ text, type }: TextoBotaoProps) { 
+    switch (type) {
+        case 'botaoLogin':
+            return <BotaoLogin>{text} </BotaoLogin>
+        case 'botaoPainelAzul':
+            return <BotaoPainelAzul>{text}</BotaoPainelAzul>
+        case 'botaoPainelVerde':
+            return <BotaoPainelVerde>{text}</BotaoPainelVerde>
+        case 'botaoCinza':
+            return <BotaoCinza>{text}</BotaoCinza>
+    }
 }

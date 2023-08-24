@@ -1,29 +1,41 @@
-import { css } from "styled-components";
-import styled from "styled-components";
+import styled from "styled-components"
 
+//Botao funcionando
 
-interface BttProps {
-    destructive?: boolean
-}
-
-export const Btt = styled.button<BttProps>`
-    padding: 10px 15px;
-    background: #fff;
-    color: #388E3C;
-    font-weight:bold;
+export const BotaoLogin = styled.button`
+    font-size:14px;
+    padding: 10px 122px;
+    margin-top: 20px;
+    border: 1px #556FF5;
     border-radius: 5px;
-    border: 0;
-    outline: 0;
-    margin-top: 25px;
+    color:#fff;
     cursor:pointer;
-    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    background-color:  #556FF5;
 
-    ${(props) => {
-        return props.destructive && css`
-        background:#fff;
-        color: #388E3C;
-        border-radius:5px #000;
-        border 0;
-        `
-    }}
+`;
+
+export const BotaoPainelAzul = styled(BotaoLogin)`
+    background-color:#fff;
+    color:#556FF5;
+    font-size:12px;
+    padding: 7px 4px;
+    border: 1px solid #556FF5;
 `
+
+export const BotaoPainelVerde = styled(BotaoPainelAzul)`
+    background-color:#fff;
+    color:#388E3C;
+    font-size:12px;
+    padding: 7px 4px;
+    border: 1px solid #388E3C;
+`
+
+export const BotaoCinza = styled(BotaoLogin)`
+    background-color: #CACACA;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: unset;
+`
+
