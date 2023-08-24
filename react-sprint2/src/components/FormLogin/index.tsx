@@ -38,9 +38,6 @@ export default function LoginAcesso() {
 
                     </CamposForm>
                     <Botao type="botaoLogin" text="entrar" />
-                    <Botao type="botaoPainelAzul" text="ver detalhes" />
-                    <Botao ty
-
                 </Form>
 
             </Container >
