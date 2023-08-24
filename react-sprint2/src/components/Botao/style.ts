@@ -13,7 +13,6 @@ export const BotaoLogin = styled.button`
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     background-color:  #556FF5;
-
 `;
 
 export const BotaoPainelAzul = styled(BotaoLogin)`
@@ -36,6 +35,5 @@ export const BotaoCinza = styled(BotaoLogin)`
     background-color: #CACACA;
     color: #fff;
     padding: 8px 12px;
-    cursor: unset;
 `
 

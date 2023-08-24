@@ -38,3 +38,13 @@ export const Container = styled.div`
   margin: 0 auto;
 
 `;
+
+export const ContainerBotao = styled.div`
+display: flex;
+justify-content: space-between;
+align-content: left;
+padding-right: 170px;
+
+
+
+`;

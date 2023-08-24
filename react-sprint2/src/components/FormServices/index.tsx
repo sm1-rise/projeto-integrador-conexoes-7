@@ -1,5 +1,5 @@
-import Button from "../Botao";
-import { Form, Container } from "./style";
+import Botao from "../Botao";
+import { Form, Container, ContainerBotao } from "./style";
 //import { FormEventHandler, useState } from "react";
 
 export default function FormService() {
@@ -41,10 +41,12 @@ export default function FormService() {
                         value="  Aguardando agendamento"
                         disabled
                     />
-                    <Button text="voltar" />
-                <Button text="atender solicitação" /> 
+                    <ContainerBotao  >
+                        <Botao type="botaoCinza" text="voltar" />
+                        <Botao type="botaoPainelVerde" text="atender solicitação" />
+                    </ContainerBotao>
                 </Form>
-            
+
             </Container>
         </>
     );
