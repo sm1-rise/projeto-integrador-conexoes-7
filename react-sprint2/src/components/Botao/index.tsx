@@ -7,7 +7,7 @@ interface TextoBotaoProps {
     onClick?: () => void,
 }
 
-export default function Botao({ text, type }: TextoBotaoProps) { 
+export default function Botao({ text, type }: TextoBotaoProps) {
     switch (type) {
         case 'botaoLogin':
             return <BotaoLogin>{text} </BotaoLogin>

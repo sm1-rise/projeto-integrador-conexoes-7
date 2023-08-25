@@ -14,10 +14,6 @@ export const Form = styled.form`
   font-size: 17px;
   font-weight: 600;
   
-  
-  
-  
-
   input {
     width: 100%;
     height: 40px;
@@ -28,7 +24,6 @@ export const Form = styled.form`
     font-weight: 500;
     background-color: #f4f4ec;
     border: 0px;
-  
   }
 `;
 

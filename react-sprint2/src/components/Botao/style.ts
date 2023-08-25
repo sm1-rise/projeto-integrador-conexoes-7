@@ -19,8 +19,13 @@ export const BotaoPainelAzul = styled(BotaoLogin)`
     background-color:#fff;
     color:#556FF5;
     font-size:12px;
-    padding: 7px 4px;
+    padding: 7px 26px;
     border: 1px solid #556FF5;
+
+    &:hover{
+        background-color:#556FF5;
+        color:#fff
+    }
 `
 
 export const BotaoPainelVerde = styled(BotaoPainelAzul)`
@@ -29,6 +34,11 @@ export const BotaoPainelVerde = styled(BotaoPainelAzul)`
     font-size:12px;
     padding: 7px 4px;
     border: 1px solid #388E3C;
+
+    &:hover{
+        background-color:#388E3C;
+        color:#fff
+    }
 `
 
 export const BotaoCinza = styled(BotaoLogin)`

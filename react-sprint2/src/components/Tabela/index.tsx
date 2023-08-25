@@ -1,5 +1,6 @@
 
-import { ContainerTabela, HeadTabela, Info, PosicaoBotao } from './style';
+import Botao from '../Botao';
+import { ContainerTabela, Info, PosicaoBotao } from './style';
 
 function createData(
     codigoPedido: string,
@@ -43,18 +44,19 @@ export default function Tabela() {
                                     <td align="right">{row.data}</td>
                                     <td align="right">{row.status}</td>
                                     <PosicaoBotao>
-
+                                        <td>
+                                            <Botao type='botaoPainelAzul' text='ver detalhes' onClick={() => { console.log("Teste") }} />
+                                            <Botao type='botaoPainelVerde' text='atender solicitações' />
+                                        </td>
                                     </PosicaoBotao>
 
                                 </tr>
 
+
                             </tbody>
                         ))}
-
                     </table>
-
                 </Info>
-
             </ContainerTabela >
         </>
     );
