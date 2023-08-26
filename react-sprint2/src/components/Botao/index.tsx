@@ -7,12 +7,13 @@ interface TextoBotaoProps {
     onClick?: () => void,
 }
 
-export default function Botao({ text, type }: TextoBotaoProps) {
+
+export default function Botao({ text, type, onClick }: TextoBotaoProps) {
     switch (type) {
         case 'botaoLogin':
-            return <BotaoLogin>{text} </BotaoLogin>
+            return <BotaoLogin>{text}</BotaoLogin>
         case 'botaoPainelAzul':
-            return <BotaoPainelAzul>{text}</BotaoPainelAzul>
+            return <BotaoPainelAzul onClick={onClick}>{text}</BotaoPainelAzul>
         case 'botaoPainelVerde':
             return <BotaoPainelVerde>{text}</BotaoPainelVerde>
         case 'botaoCinza':
