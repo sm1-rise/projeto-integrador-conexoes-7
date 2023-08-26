@@ -1,5 +1,4 @@
-import BotaoTeste from "../BotaoTeste";
-import { BotaoDetalhe, BotaoPainel } from "../BotaoTeste/style";
+import Botao from "../Botao";
 import { Form, CamposForm, Container } from "./style";
 import { FormEventHandler, useState } from "react";
 
@@ -38,11 +37,9 @@ export default function LoginAcesso() {
                         />
 
                     </CamposForm>
-                    <BotaoTeste text="entrar" />
-                    <BotaoPainel>ver detalhe</BotaoPainel>
-                    <BotaoDetalhe>voltar</BotaoDetalhe>
-
+                    <Botao type="botaoLogin" text="entrar" />
                 </Form>
+
             </Container >
         </>
     );

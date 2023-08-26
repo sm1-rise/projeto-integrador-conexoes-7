@@ -16,6 +16,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
+<<<<<<< HEAD
+=======
+    "routes": "^2.1.0",
+>>>>>>> 98b13f2248a66aa72900a91d33784b9a2c72d03b
     "styled-components": "^6.0.7"
   },
   "devDependencies": {

@@ -12,21 +12,18 @@ export default function Routes() {
             element: <Login />,
         },
         {
-            path: "/services",
+            path: "/servicos",
             element: <Services />
         },
         {
-            path: "/detailsService",
+            path: "/detalhesServicos",
             element: <ServicoDetalhe />
         },
         {
             path: "/relatorios",
             element: <Relatorio />
         },
-        {
-            path: '/testes',
-            element: <Teste />
-        }
+        
     ]);
 
     return <RouterProvider router={routes} />;

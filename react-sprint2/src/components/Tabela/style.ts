@@ -6,6 +6,8 @@ export const ContainerTabela = styled.div`
     display: flex;
     justify-content:center;
     padding: 0px px;
+    
+    
 `
 
 export const Info = styled.section`
@@ -17,34 +19,35 @@ export const Info = styled.section`
 
 td, th {
   text-align: center;
-
+  
+ 
 }
 
 th{
   padding: 20px;
+  
+
 }
 td{
   font-weight:400;
+  
 }
 
 table{
   width: 100%;
   table-layout: fixed;
   text-align: center;
-}
+  
 
-thead{
-  border: 1px solid black;
 }
 `;
 
-export const HeadTabela = styled.div`
-
-    tr{
-        padding:0px 60px;
-         text-align: center;  
-         background: #556ff5;
-    }
-
+export const PosicaoBotao = styled.div`
+  td{
+    padding-bottom:20px;
+    padding-right: 10px;
+    border:none;
+    
+  }
 `
 
