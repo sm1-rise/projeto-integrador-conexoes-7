@@ -8,8 +8,8 @@ export default function ServicoDetalhe() {
         <>
             <Header />
             <TextoPrincipal
-                titulo="Painel Administrativo"
-                descricao="Área exclusiva para funcionários"
+                titulo="Pedido #1232434566"
+                descricao="Detalhes da solicitação"
             />
             <FormService />
             <Footer />
