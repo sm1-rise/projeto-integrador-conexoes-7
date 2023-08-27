@@ -45,5 +45,9 @@ export const BotaoCinza = styled(BotaoLogin)`
     background-color: #CACACA;
     color: #fff;
     padding: 8px 12px;
+
+    &:hover{
+        background-color: #000;
+    }
 `
 

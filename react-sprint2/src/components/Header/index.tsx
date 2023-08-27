@@ -9,7 +9,7 @@ export default function Header() {
         <>
             <HeaderStyled>
                 <Container>
-                    <img src={logoConexos} alt="Logo Conexos" />
+                    <Link to="/"><img src={logoConexos} alt="Logo Conexos" /></Link>
                     <Menu>
                         <ul>
                             <li>

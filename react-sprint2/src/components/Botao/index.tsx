@@ -1,5 +1,6 @@
 
 import { BotaoPainelAzul, BotaoLogin, BotaoPainelVerde, BotaoCinza, } from "./style";
+import React, { useState } from 'react';
 
 interface TextoBotaoProps {
     type: string;
@@ -7,15 +8,15 @@ interface TextoBotaoProps {
     onClick?: () => void,
 }
 
-
 export default function Botao({ text, type, onClick }: TextoBotaoProps) {
+
     switch (type) {
         case 'botaoLogin':
             return <BotaoLogin>{text}</BotaoLogin>
         case 'botaoPainelAzul':
-            return <BotaoPainelAzul onClick={onClick}>{text}</BotaoPainelAzul>
+            return <BotaoPainelAzul>{text}</BotaoPainelAzul>
         case 'botaoPainelVerde':
-            return <BotaoPainelVerde>{text}</BotaoPainelVerde>
+            return <BotaoPainelVerde onClick={(event) =>{event.preventDefault();}}>{text}</BotaoPainelVerde>
         case 'botaoCinza':
             return <BotaoCinza>{text}</BotaoCinza>
     }

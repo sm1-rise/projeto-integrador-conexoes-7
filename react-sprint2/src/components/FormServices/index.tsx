@@ -1,8 +1,10 @@
+import { useState } from "react";
 import Botao from "../Botao";
+import PopUp from "../PopUp";
 import { Form, Container, ContainerBotao } from "./style";
-//import { FormEventHandler, useState } from "react";
-
+import { Link } from "react-router-dom";
 export default function FormService() {
+
     return (
         <>
             <Container>
@@ -41,12 +43,11 @@ export default function FormService() {
                         value="  Aguardando agendamento"
                         disabled
                     />
-                    <ContainerBotao  >
-                        <Botao type="botaoCinza" text="voltar" />
-                        <Botao type="botaoPainelVerde" text="atender solicitação" />
+                    <ContainerBotao >
+                    <Link to="/servicos"><Botao type="botaoCinza" text="voltar"/></Link>
+                        <Botao type="botaoPainelVerde" text="atender solicitação"/> 
                     </ContainerBotao>
                 </Form>
-
             </Container>
         </>
     );
