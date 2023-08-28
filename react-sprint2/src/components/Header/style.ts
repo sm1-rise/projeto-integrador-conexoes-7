@@ -25,8 +25,24 @@ export const Menu = styled.nav`
             a:any-link{
                 color:#fff;
                 text-decoration:none;
-            }
-            
+                position: relative;
+
+                &:hover {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                        width: 100%;
+                        height: 2px;
+                        background-color: #fff;
+                    }    
+                
+                    &:hover {
+                        &::after {
+                            width: 100%; /* Aumenta a largura ao passar o mouse */
+                        }
+        }
     }
-    }
+}
 `;

@@ -1,5 +1,6 @@
 
 import Botao from '../Botao';
+import Modal from '../Modal';
 import { ContainerTabela, Info, PosicaoBotao } from './style';
 import { Link } from 'react-router-dom';
 
@@ -50,8 +51,7 @@ export default function Tabela() {
                                             <Botao type='botaoPainelAzul' text='ver detalhes' onClick={() => { console.log("Teste") }} />     
 
                                             </Link>
-                                            
-                                            <Botao type='botaoPainelVerde' text='atender solicitações' />
+                                            <Modal/>
                                         </td>
                                     </PosicaoBotao>
 

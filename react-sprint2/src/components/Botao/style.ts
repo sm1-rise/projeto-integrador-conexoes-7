@@ -13,6 +13,10 @@ export const BotaoLogin = styled.button`
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     background-color:  #556FF5;
+    
+    &:hover{
+        background-color:#394FF5;
+    }
 `;
 
 export const BotaoPainelAzul = styled(BotaoLogin)`
@@ -32,7 +36,7 @@ export const BotaoPainelVerde = styled(BotaoPainelAzul)`
     background-color:#fff;
     color:#388E3C;
     font-size:12px;
-    padding: 7px 4px;
+    padding: 7px 7px;
     border: 1px solid #388E3C;
 
     &:hover{
@@ -47,7 +51,7 @@ export const BotaoCinza = styled(BotaoLogin)`
     padding: 8px 12px;
 
     &:hover{
-        background-color: #000;
+        background-color: red;
     }
 `
 

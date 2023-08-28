@@ -1,6 +1,5 @@
 
 import { BotaoPainelAzul, BotaoLogin, BotaoPainelVerde, BotaoCinza, } from "./style";
-import React, { useState } from 'react';
 
 interface TextoBotaoProps {
     type: string;

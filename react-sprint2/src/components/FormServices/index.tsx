@@ -3,6 +3,7 @@ import Botao from "../Botao";
 import PopUp from "../PopUp";
 import { Form, Container, ContainerBotao } from "./style";
 import { Link } from "react-router-dom";
+import Modal from "../Modal";
 export default function FormService() {
 
     return (
@@ -45,9 +46,10 @@ export default function FormService() {
                     />
                     <ContainerBotao >
                     <Link to="/servicos"><Botao type="botaoCinza" text="voltar"/></Link>
-                        <Botao type="botaoPainelVerde" text="atender solicitação"/> 
+                    <Modal/>
                     </ContainerBotao>
                 </Form>
+                
             </Container>
         </>
     );
