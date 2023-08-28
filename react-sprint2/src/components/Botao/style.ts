@@ -54,4 +54,11 @@ export const BotaoCinza = styled(BotaoLogin)`
         background-color: red;
     }
 `
+export const BotaoGoPainel = styled(BotaoCinza)`
+    background-color:  #556FF5;
+    padding: 12px 15px;
 
+    &:hover{
+        background-color:#388E3C;
+    }
+`

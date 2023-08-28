@@ -15,11 +15,11 @@ function createData(
 }
 
 const pedidos = [
-    createData('A1092332Q', 'JOAO', "Plano 1", "20/10/2010", "Inicial"),
-    createData('A1092332Q', 'JOAO', "Plano 1", "20/10/2010", "Inicial"),
-    createData('A1092332Q', 'JOAO', "Plano 1", "20/10/2010", "Inicial"),
-    createData('A1092332Q', 'JOAO', "Plano 1", "20/10/2010", "Inicial"),
-    createData('A1092332Q', 'JOAO', "Plano 1", "20/10/2010", "Inicial"),
+    createData('A10962332Q', 'Pedro', "Plano 3", "23/10/2010", "Inicial"),
+    createData('A10925332Q', 'Jorge', "Plano 2", "25/10/2010", "Final"),
+    createData('A10923332Q', 'Talita', "Plano 2", "23/11/2010", "Final"),
+    createData('A10924332Q', 'Senna', "Plano 3", "05/11/2010", "Inicial"),
+    createData('B1091332Q', 'Julia', "Plano 2", "18/11/2010", "Inicial"),
 ];
 
 export default function Tabela() {

@@ -20,7 +20,6 @@ export default function Relatorio() {
             <PosicaoImagem>
             <img src={manutencao} alt="Logo Conexos"/>
             </PosicaoImagem>
-       
             <Footer />
         </>
     );
