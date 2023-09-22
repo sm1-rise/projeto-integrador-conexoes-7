@@ -23,6 +23,13 @@ export default function Routes() {
             path: "/relatorios",
             element: <Relatorio />
         },
+
+
+        {
+            path: "/teste",
+            element: <Teste/>
+
+        },
         
     ]);
 

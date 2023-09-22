@@ -1,13 +1,26 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import BotaoTeste from "../../components/Botao";
+import Tabela from "../../components/Tabela";
+import Pesquisa from "../../components/Pesquisa";
+import { EstiloPesquisa } from "../../components/Pesquisa/styled";
+import TextoPrincipal from "../../components/TextoPrincipal";
+import FormService from "../../components/FormServices";
 
-export default function Teste() {
+export default function Service() {
     return (
         <>
             <Header />
-            <BotaoTeste text="enviar" onClick={() => console.log("clique")} />
-            <BotaoTeste text="enviar" onClick={() => console.log("clique")} />
+            <TextoPrincipal titulo="Painel de Controle" descricao=""/>
+            <EstiloPesquisa>
+                <Pesquisa/>
+            </EstiloPesquisa>
+            <Tabela />
+
+            <FormService />
+
+
+
+
             <Footer />
         </>
     );
