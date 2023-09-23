@@ -1,5 +1,9 @@
 const express = require ("express");
-
+const router = require("./src/routes/router.js");
+const { Model } = require("sequelize");
 const app = express();
 
-// app.listen(3000, () => console.log("Conectado na porta 3000"));
+app.use(express.json());
+app.use(router);
+
+module.exports = app;
