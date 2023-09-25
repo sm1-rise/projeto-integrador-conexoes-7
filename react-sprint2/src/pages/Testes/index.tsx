@@ -5,6 +5,7 @@ import Pesquisa from "../../components/Pesquisa";
 import { EstiloPesquisa } from "../../components/Pesquisa/styled";
 import TextoPrincipal from "../../components/TextoPrincipal";
 import FormService from "../../components/FormServices";
+import FormAPI from "../../components/FormAPI";
 
 export default function Service() {
     return (
@@ -16,7 +17,7 @@ export default function Service() {
             </EstiloPesquisa>
             <Tabela />
 
-            <FormService />
+            <FormAPI />
 
 
 
