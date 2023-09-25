@@ -8,6 +8,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
 import { TransitionProps } from '@mui/material/transitions';
 import { BotaoPainelVerde } from '../Botao/style';
+import { Estilo } from './style';
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -21,7 +22,7 @@ const Transition = React.forwardRef(function Transition(
 export default function AlertDialogSlide() {
   const [open, setOpen] = React.useState(false);
 
-  const handleClickOpen = ()=>{
+  const handleClickOpen = () => {
     setOpen(true);
   }
 
@@ -31,22 +32,24 @@ export default function AlertDialogSlide() {
 
   return (
     <div>
-      <BotaoPainelVerde onClick={handleClickOpen}>atender solicitação</BotaoPainelVerde>  
+      <BotaoPainelVerde onClick={handleClickOpen}>atender solicitação</BotaoPainelVerde>
       <Dialog
         open={open}
         TransitionComponent={Transition}
         keepMounted
         onClose={handleClose}
-        onClick={(event)=>{event.defaultPrevented}}
+        onClick={(event) => { event.defaultPrevented }}
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle>{"Realmente deseja seguir com a solicitação?"}</DialogTitle>
+        <Estilo><h1>Realmente deseja seguir com a solicitação?</h1></Estilo>
         <DialogActions>
           <Button onClick={handleClose}>Não</Button>
           <Button onClick={handleClose}>Sim</Button>
+          <Button onClick={handleClose}>Sim</Button>
+          <Button onClick={handleClose}>Sim</Button>
         </DialogActions>
       </Dialog>
-      
-    </div>
+
+    </div >
   );
 }
