@@ -6,10 +6,13 @@ export const Estilo = styled.div`
     margin: 0 auto;
     
     h1{
-        margin-top: 100px;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        margin-left: 15px;
         text-transform:uppercase;
         color: #556FF5;
-        font-size:47px;
+        font-size:20px;
+        
     }
 
     p{
