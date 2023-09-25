@@ -10,17 +10,13 @@ export default function Service() {
     return (
         <>
             <Header />
-            <TextoPrincipal titulo="Painel de Controle" descricao=""/>
+            <TextoPrincipal titulo="Painel de Solicitações" descricao="" />
             <EstiloPesquisa>
-                <Pesquisa/>
+                <Pesquisa />
             </EstiloPesquisa>
             <Tabela />
-
+            <TextoPrincipal titulo="Atualizar pedido" descricao="" />
             <FormService />
-
-
-
-
             <Footer />
         </>
     );
