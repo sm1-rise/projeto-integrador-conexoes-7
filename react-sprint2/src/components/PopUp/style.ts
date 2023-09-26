@@ -1,23 +1,18 @@
 import styled from "styled-components";
 
 export const Estilo = styled.div`
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
+    margin: 50px;
+    padding-left: 10px;
     
     h1{
-        margin-top: 20px;
-        margin-bottom: 100px;
-        margin-left: 15px;
+        margin-top:0px;
+        padding-left: 100px;
+        padding-right: 100px;
         text-transform:uppercase;
         color: #556FF5;
         font-size:20px;
-        
     }
+`;
 
-    p{
-        font-weight: bold;
-        font-size:22px;
-    }
 
-`;    
+
