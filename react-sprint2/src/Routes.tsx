@@ -4,6 +4,7 @@ import Services from "./pages/Services"
 import ServicoDetalhe from "./pages/ServicoDetalhe";
 import Relatorio from "./pages/Relatorio";
 import Teste from "./pages/Testes";
+import Inicio from "./pages/Inicio";
 
 export default function Routes() {
     const routes = createBrowserRouter([
@@ -30,7 +31,12 @@ export default function Routes() {
             element: <Teste/>
 
         },
-        
+
+        {
+            path: "/Inicio",
+            element: <Inicio/>
+        }
+
     ]);
 
     return <RouterProvider router={routes} />;
