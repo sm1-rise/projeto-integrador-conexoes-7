@@ -49,7 +49,8 @@ export default function AlertDialogSlide() {
         <Estilo><h1> Atualizar Status </h1>
           <SelectSmall />
         </Estilo>
-        <Button onClick={handleClose}>Sair</Button>
+        <Button onClick={handleClose}>Voltar</Button>
+        <Button onClick={handleClose}>Atualizar</Button>
 
       </Dialog>
 
