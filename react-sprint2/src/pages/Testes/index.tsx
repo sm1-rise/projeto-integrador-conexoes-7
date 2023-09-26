@@ -7,20 +7,19 @@ import TextoPrincipal from "../../components/TextoPrincipal";
 import FormService from "../../components/FormServices";
 import FormAPI from "../../components/FormAPI";
 import SelectSmall from "../../components/SelectStatus";
+import axios from "axios";
+import { useState } from "react";
+import { useEffect } from "react";
+
+
+
 
 export default function Service() {
     return (
         <>
             <Header />
-            <TextoPrincipal titulo="Painel de Solicitações" descricao="" />
-            <EstiloPesquisa>
-                <Pesquisa />
-            </EstiloPesquisa>
-            <Tabela />
             <TextoPrincipal titulo="Atualizar pedido" descricao="" />
-            <FormService />
             <FormAPI />
-            <SelectSmall />
             <Footer />
         </>
     );

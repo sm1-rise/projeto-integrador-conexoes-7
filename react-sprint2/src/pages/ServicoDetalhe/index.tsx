@@ -14,6 +14,5 @@ export default function ServicoDetalhe() {
             <FormService />
             <Footer />
         </>
-
     );
 }
