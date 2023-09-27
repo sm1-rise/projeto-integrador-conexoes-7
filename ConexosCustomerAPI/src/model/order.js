@@ -14,13 +14,9 @@ const Order = db.define(
             allowNull: false,
         },
         cpf:{
-            type:sequelize.STRING(11),
+            type:sequelize.STRING(20),
             allowNull:false,
             unique:true 
-        },
-        cpf:{
-            type:sequelize.STRING(255),
-            allowNull:false,
         },
         telefone:{
             type: sequelize.STRING(20),
@@ -31,6 +27,10 @@ const Order = db.define(
             allowNull:false,
         },
         preferencia_horario:{
+            type:sequelize.STRING(100),
+            allowNull:false,
+        },
+        status:{
             type:sequelize.STRING(100),
             allowNull:false,
         },

@@ -1,6 +1,6 @@
-const app = require("./app.js")
+const app = require("./app")
 const dotenv = require("dotenv");
-const db = require("./src/config/database.js");
+const db = require("./config/database.js");
 
 dotenv.config();
 const portExpress = 3000;

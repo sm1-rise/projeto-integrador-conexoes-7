@@ -20,7 +20,7 @@ const orderController ={
             if(!order){
                 return res.status(404).json({messege:'Pedido não encontrado'});
             } 
-            res.json({order, message:"Pedido encontrado com sucesso"});
+            res.status(200).json(order);
         }catch(error){
             console.log(error)
             res.status(500).json({messege:'Erro interno'});
@@ -29,13 +29,14 @@ const orderController ={
 
     createOrder:async(req,res)=>{
         try{
-            const {nome, cpf, telefone,servico_escolhido, preferencia_horario} = req.body;
+            const {nome, cpf, telefone,servico_escolhido, preferencia_horario, status} = req.body;
             const newOrder = await Order.create({
                 nome,
                 cpf,
                 telefone,
                 servico_escolhido,
                 preferencia_horario,
+                status
             });
             res.status(201).json({newOrder,  messege:"Pedido criado com sucesso"});
         }catch(error){
@@ -47,13 +48,14 @@ const orderController ={
     updateOrder:async(req,res) =>{
         try{
             const {id} = req.params;
-            const {nome, cpf, telefone,servico_escolhido, preferencia_horario} = req.body;
+            const {nome, cpf, telefone,servico_escolhido, preferencia_horario,status} = req.body;
             const [updateOrder] = await Order.update({
                 nome,
                 cpf,
                 telefone,
                 servico_escolhido,
                 preferencia_horario,
+                status
             },
             {
                 where:{id},
