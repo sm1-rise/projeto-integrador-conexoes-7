@@ -10,6 +10,9 @@ import SelectSmall from "../../components/SelectStatus";
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
+import MyComponent from "../../components/Teste";
+import { Form } from "react-router-dom";
+import TabelaApi from "../../components/TabelaApi";
 
 
 
@@ -19,7 +22,9 @@ export default function Service() {
         <>
             <Header />
             <TextoPrincipal titulo="Atualizar pedido" descricao="" />
-            <FormAPI />
+            {/* <MyComponent /> */}
+            {/* <FormAPI /> */}
+            <TabelaApi />
             <Footer />
         </>
     );

@@ -4,16 +4,14 @@ import Tabela from "../../components/Tabela";
 import Pesquisa from "../../components/Pesquisa";
 import { EstiloPesquisa } from "../../components/Pesquisa/styled";
 import TextoPrincipal from "../../components/TextoPrincipal";
+import TabelaApi from "../../components/TabelaApi";
 
 export default function Service() {
     return (
         <>
             <Header />
             <TextoPrincipal titulo="Painel de Controle" descricao=""/>
-            <EstiloPesquisa>
-                <Pesquisa/>
-            </EstiloPesquisa>
-            <Tabela />
+            <TabelaApi />
             <Footer />
         </>
     );

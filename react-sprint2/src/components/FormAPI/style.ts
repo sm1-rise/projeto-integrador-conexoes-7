@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Form = styled.div`
   width: 450px;
-  height: 500px;
+  height: 550px;
   background-color: #fff;
   padding: 30px 35px;
   margin: 50px 0;
