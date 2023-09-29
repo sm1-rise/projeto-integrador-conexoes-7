@@ -14,6 +14,7 @@ export const Info = styled.section`
   border: 1px solid #b4b4b4;
   border-radius: 10px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  padding: 10px;
 
 td, th {
   text-align: center;
@@ -38,6 +39,18 @@ table{
   
 
 }
+
+input{
+  width:400px;
+  height: 40px;
+  padding: 20px;
+  background-color:#CACACA;
+  margin-left: 10px;
+  border: 1px solid #FFF;
+  border-radius: 30px;
+
+}
+
 `;
 
 export const PosicaoBotao = styled.div`

@@ -32,8 +32,12 @@ interface Order {
 export default function TabelaApi() {
 
     const [order, setOrder] = useState<Order[]>([]);
+    const [searchTerm, setSearchTerm] = useState("");
 
     useEffect(() => {
+
+
+
         axios.get('http://localhost:3000/order')
             .then(response => {
                 setOrder(response.data);
@@ -43,11 +47,20 @@ export default function TabelaApi() {
             });
     }, []);
 
+    const filteredOrder = order.filter((order) => {
+        return order.nome.toLowerCase().includes(searchTerm.toLowerCase());
+    });
 
     return (
-        <>
+        <> 
             <ContainerTabela>
                 <Info>
+                <input
+                        type="text"
+                        placeholder="Pesquisar por nome..."
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                    />
                     <table>
                         <thead>
                             <tr>
@@ -59,7 +72,7 @@ export default function TabelaApi() {
                             </tr>
                         </thead>
                         <tbody>
-                            {order.map((order) => (
+                            {filteredOrder.map((order) => (
                                 <tr key={order.id}>
                                     <td align="right">{order.id}</td>
                                     <td align="right">{order.nome}</td>
@@ -75,14 +88,11 @@ export default function TabelaApi() {
                                         </td>
                                     </PosicaoBotao>
                                 </tr>
-
                             ))}
-                            <Alert severity="success">Status atualizado com sucesso!</Alert>
                         </tbody>
                     </table>
                 </Info>
             </ContainerTabela>
-
         </>
     );
 }
@@ -110,12 +120,20 @@ function AlertDialogSlide({ id }: AlertDialogProps) {
         setStatus(event.target.value);
     };
 
+    
+
+    const [showAlert, setShowAlert] = useState(false);
+
     const handleStatusUpdate = async () => {
         const response = await axios.put(`http://localhost:3000/order/${id}`, { status: status });
-        if (response.status == 200) { console.log("Status atualizado com sucesso!" + id); }
+        if (response.status == 200) { 
+            setShowAlert(true);
+            setTimeout(() => {
+                setShowAlert(false);
+              }, 2000);
+        }
         else {
             console.log("Erro ao atualizar o status do pedido.")
-            AlertUpdate();
         }
     }
 
@@ -139,8 +157,8 @@ function AlertDialogSlide({ id }: AlertDialogProps) {
                 onClick={(event) => { event.defaultPrevented }}
                 aria-describedby="alert-dialog-slide-description"
             >
+                {showAlert && <AlertUpdate />}
                 <Estilo><h1> Atualizar Status </h1>
-
                 </Estilo>
                 <FormControl sx={{ m: 1, minWidth: 300 }} size="small">
                     <InputLabel id="demo-select-small-label">Status</InputLabel>
@@ -169,14 +187,13 @@ function AlertDialogSlide({ id }: AlertDialogProps) {
 }
 
 
-
-
 const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
     props,
     ref,
 ) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
+
 
 function AlertUpdate() {
     return (
