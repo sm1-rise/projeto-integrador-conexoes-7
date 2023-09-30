@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
-import Botao from "../Botao";
-import PopUp from "../PopUp";
+import { useState, useEffect } from "react";
+import Botao from "../Buttom";
 import { Form, Container, ContainerBotao } from "./style";
 import { Link, useParams} from "react-router-dom";
-import Modal from "../Modal";
 import axios from 'axios';
+import PopUpStatusUpdate from "../PopUpStatusUpdate";
 
 export default function FormAPI() {
 
@@ -41,11 +40,9 @@ export default function FormAPI() {
 
                           <label>Status</label>
                           <input type="text" value={order.status} disabled />
-                  
-                  
                     <ContainerBotao>
                         <Link to="/servicos"><Botao type="botaoCinza" text="Voltar" /></Link>
-                        <Modal />
+                        <PopUpStatusUpdate id = {order.id} />
                     </ContainerBotao>
                 </Form>
             </Container>

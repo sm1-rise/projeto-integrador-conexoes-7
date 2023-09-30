@@ -1,22 +1,9 @@
 import { useState, useEffect } from "react";
-import Botao from '../Botao';
+import Botao from '../Buttom';
 import { ContainerTabela, Info, PosicaoBotao } from './style';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import Dialog from '@mui/material/Dialog';
-import Slide from '@mui/material/Slide';
-import { TransitionProps } from '@mui/material/transitions';
-import { BotaoLogin, BotaoPainelVerde } from '../Botao/style';
-import { Estilo } from './style';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-import Snackbar from '@mui/material/Snackbar';
-import MuiAlert, { AlertProps } from '@mui/material/Alert';
-import React from "react";
+import PopUpStatusUpdate from "../PopUpStatusUpdate";
 
 interface Order {
     id: number;
@@ -32,12 +19,8 @@ interface Order {
 export default function TabelaApi() {
 
     const [order, setOrder] = useState<Order[]>([]);
-    const [searchTerm, setSearchTerm] = useState("");
 
     useEffect(() => {
-
-
-
         axios.get('http://localhost:3000/order')
             .then(response => {
                 setOrder(response.data);
@@ -47,6 +30,8 @@ export default function TabelaApi() {
             });
     }, []);
 
+    const [searchTerm, setSearchTerm] = useState("");
+    
     const filteredOrder = order.filter((order) => {
         return order.nome.toLowerCase().includes(searchTerm.toLowerCase());
     });
@@ -84,7 +69,7 @@ export default function TabelaApi() {
                                             <Link to={`/detalhe/${order.id}`}>
                                                 <Botao type='botaoPainelAzul' text='ver detalhes' />
                                             </Link>
-                                            <AlertDialogSlide id={order.id} />
+                                           <PopUpStatusUpdate id = {order.id} />
                                         </td>
                                     </PosicaoBotao>
                                 </tr>
@@ -96,110 +81,4 @@ export default function TabelaApi() {
         </>
     );
 }
-
-const Transition = React.forwardRef(function Transition(
-    props: TransitionProps & {
-        children: React.ReactElement<any, any>;
-    },
-    ref: React.Ref<unknown>,
-) {
-    return <Slide direction="up" ref={ref} {...props} />;
-});
-
-interface AlertDialogProps {
-    id: number;
-}
-
-function AlertDialogSlide({ id }: AlertDialogProps) {
-
-    const [open, setOpen] = React.useState(false);
-
-    const [status, setStatus] = React.useState('');
-
-    const handleChange = (event: SelectChangeEvent) => {
-        setStatus(event.target.value);
-    };
-
-    
-
-    const [showAlert, setShowAlert] = useState(false);
-
-    const handleStatusUpdate = async () => {
-        const response = await axios.put(`http://localhost:3000/order/${id}`, { status: status });
-        if (response.status == 200) { 
-            setShowAlert(true);
-            setTimeout(() => {
-                setShowAlert(false);
-              }, 2000);
-        }
-        else {
-            console.log("Erro ao atualizar o status do pedido.")
-        }
-    }
-
-    const handleClickOpen = () => {
-        setOpen(true);
-    }
-
-    const handleClose = () => {
-        location.reload();
-        setOpen(false);
-    };
-
-    return (
-        <div>
-            <BotaoPainelVerde onClick={handleClickOpen}>atender solicitação</BotaoPainelVerde>
-            <Dialog
-                open={open}
-                TransitionComponent={Transition}
-                keepMounted
-                onClose={handleClose}
-                onClick={(event) => { event.defaultPrevented }}
-                aria-describedby="alert-dialog-slide-description"
-            >
-                {showAlert && <AlertUpdate />}
-                <Estilo><h1> Atualizar Status </h1>
-                </Estilo>
-                <FormControl sx={{ m: 1, minWidth: 300 }} size="small">
-                    <InputLabel id="demo-select-small-label">Status</InputLabel>
-                    <Select
-                        labelId="demo-select-small-label"
-                        id="demo-select-small"
-                        value={status}
-                        label="status"
-                        onChange={handleChange}
-                    >
-                        <MenuItem value="">
-                        </MenuItem>
-                        <MenuItem value={"CANCELADO"}>CANCELADO</MenuItem>
-                        <MenuItem value={"ACEITO"}>ACEITO</MenuItem>
-                        <MenuItem value={"EM ANDAMENTO"}>EM ANDAMENTO</MenuItem>
-                        <MenuItem value={"FINALIZADO"}>FINALIZADO</MenuItem>
-                        <MenuItem value={"ATRASADO"}>ATRASADO</MenuItem>
-                    </Select>
-                </FormControl>
-                <Button onClick={handleStatusUpdate}>Atualizar</Button>
-                <Button onClick={handleClose}>Voltar</Button>
-            </Dialog>
-        </div >
-
-    );
-}
-
-
-const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
-    props,
-    ref,
-) {
-    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
-});
-
-
-function AlertUpdate() {
-    return (
-        <Alert
-            severity="success">Status atualizado com sucesso!</Alert>
-    );
-}
-
 

@@ -1,4 +1,4 @@
-import Botao from "../Botao";
+import Botao from "../Buttom";
 import { Form, CamposForm, Container } from "./style";
 import { FormEventHandler, useState } from "react";
 
