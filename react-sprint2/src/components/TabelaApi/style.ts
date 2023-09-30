@@ -44,7 +44,7 @@ input{
   width:400px;
   height: 40px;
   padding: 20px;
-  background-color:#CACACA;
+  background-color: rgba(85, 111, 245, 0.20);
   margin-left: 10px;
   border: 1px solid #FFF;
   border-radius: 30px;

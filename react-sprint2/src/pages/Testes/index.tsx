@@ -1,30 +1,38 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Tabela from "../../components/Tabela";
-import Pesquisa from "../../components/Pesquisa";
-import { EstiloPesquisa } from "../../components/Pesquisa/styled";
 import TextoPrincipal from "../../components/TextoPrincipal";
-import FormService from "../../components/FormServices";
-import FormAPI from "../../components/FormAPI";
-import SelectSmall from "../../components/SelectStatus";
-import axios from "axios";
-import { useState } from "react";
-import { useEffect } from "react";
-import MyComponent from "../../components/Teste";
-import { Form } from "react-router-dom";
-import TabelaApi from "../../components/TabelaApi";
+import StatusQtd from "../../components/StatusQtd";
+import { PosicaoBotao, PosicaoCardsStatus } from "./styled";
+import { BotaoCinza, BotaoInicio, BotaoLinkInicio, BotaoLogin, BotaoPainelVerde } from "../../components/Buttom/style";
+import { Link } from "react-router-dom";
 
 
 
 
-export default function Service() {
+export default function Teste() {
     return (
         <>
             <Header />
-            <TextoPrincipal titulo="Atualizar pedido" descricao="" />
-            {/* <MyComponent /> */}
-            {/* <FormAPI /> */}
-            <TabelaApi />
+            
+            <TextoPrincipal titulo="Bem vindo à Conexos " descricao="Sua Jornada na Velocidade da Luz!" />
+            
+           <PosicaoCardsStatus>
+           <PosicaoBotao>
+
+           <Link to="/relatorios">
+                <BotaoInicio>Acessar Relatório</BotaoInicio>
+            </Link> 
+
+            <Link to="/servicos">
+                    <BotaoLinkInicio>Acessar Painel</BotaoLinkInicio>
+             </Link>
+                <BotaoInicio>Sair</BotaoInicio>
+           </PosicaoBotao>
+                <StatusQtd statusDesejado="EM ANDAMENTO" />
+                <StatusQtd statusDesejado="ATRASADO" />
+                <StatusQtd statusDesejado="CANCELADO" />
+           </PosicaoCardsStatus>
+           
             <Footer />
         </>
     );

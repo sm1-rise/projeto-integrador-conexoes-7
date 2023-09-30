@@ -13,7 +13,7 @@ export default function Header() {
                     <Menu>
                         <ul>
                             <li>
-                                <Link to="/">Início</Link>
+                                <Link to="/inicio">Início</Link>
                             </li>
                             <li>
                                 <Link to="/servicos">Serviços</Link>

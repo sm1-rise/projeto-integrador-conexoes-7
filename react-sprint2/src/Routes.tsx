@@ -3,9 +3,9 @@ import Login from "./pages/Login";
 import Services from "./pages/Services"
 import ServicoDetalhe from "./pages/ServicoDetalhe";
 import Relatorio from "./pages/Relatorio";
-import Teste from "./pages/Testes";
 import Inicio from "./pages/Inicio";
-import FormAPI from "./components/FormAPI";
+import Teste from "./pages/Testes";
+
 
 export default function Routes() {
     const routes = createBrowserRouter([
@@ -27,7 +27,7 @@ export default function Routes() {
         },
         {
             path: "/teste",
-            element: <Teste/>
+            element: <Teste />
 
         },
 

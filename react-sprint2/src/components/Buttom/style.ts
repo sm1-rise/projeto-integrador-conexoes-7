@@ -62,3 +62,11 @@ export const BotaoGoPainel = styled(BotaoCinza)`
         background-color:#388E3C;
     }
 `
+
+export const BotaoInicio = styled(BotaoCinza)`
+    background-color: #556FF5;
+`;
+
+export const BotaoLinkInicio = styled(BotaoInicio)`
+    padding: 10px 22px;
+`
