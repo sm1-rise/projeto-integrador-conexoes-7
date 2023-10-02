@@ -50,7 +50,7 @@
                             <label for="nome">Código do pedido</label>
                             <input type="text" id="codigo" name="codigo-produto" required>
                         </div>
-                        <input type="submit" value="Contratar" id="contratar-button">
+                        <input type="submit" value="Consultar" id="consultar-button">
                         <div>
                             <p id="resultado-apiStatus"></p>
                             <p id="resultado-apiNome"></p>
@@ -92,6 +92,25 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Sucesso!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Seu pedido foi enviado com sucesso.
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- FIM FOOTER -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

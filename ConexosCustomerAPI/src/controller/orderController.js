@@ -29,13 +29,14 @@ const orderController ={
 
     createOrder:async(req,res)=>{
         try{
-            const {nome, cpf, telefone,servico_escolhido, preferencia_horario, status} = req.body;
+            const {nome, cpf, telefone,email, plano, horario, status} = req.body;
             const newOrder = await Order.create({
                 nome,
                 cpf,
+                email,
                 telefone,
-                servico_escolhido,
-                preferencia_horario,
+                plano,
+                horario,
                 status
             });
             res.status(201).json({newOrder,  messege:"Pedido criado com sucesso"});
@@ -48,13 +49,14 @@ const orderController ={
     updateOrder:async(req,res) =>{
         try{
             const {id} = req.params;
-            const {nome, cpf, telefone,servico_escolhido, preferencia_horario,status} = req.body;
+            const {nome, cpf, telefone,email, plano, horario, status} = req.body;
             const [updateOrder] = await Order.update({
                 nome,
                 cpf,
+                email,
                 telefone,
-                servico_escolhido,
-                preferencia_horario,
+                plano,
+                horario,
                 status
             },
             {

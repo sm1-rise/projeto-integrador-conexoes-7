@@ -10,6 +10,8 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="icon" href="./imagens/conexos-logo-white (4) 1.svg">
     <link rel="stylesheet" href="./estilo/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -120,7 +122,7 @@
             <div class="container">
                 <div class="formulario">
                     <h2>Contratação do plano</h2>
-                    <form>
+                    <form id="formulario">
                         <div class="form-group">
                             <label for="nome">Nome completo:</label>
                             <input type="text" id="nome" name="nome" required>
@@ -140,17 +142,17 @@
                         <div class="form-group">
                             <label for="plano">Plano:</label>
                             <select id="plano" name="plano" required>
-                                <option value="plano1">Plano Basico</option>
-                                <option value="plano2">Você+conectado</option>
-                                <option value="plano3">Plano empresarial</option>
+                                <option value="Plano Básicos">Plano Basico</option>
+                                <option value="Você+conectado">Você+conectado</option>
+                                <option value="Plano Empresarial">Plano empresarial</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="horario">Preferência de horário para visita técnica:</label>
                             <select id="horario" name="horario" required>
-                                <option value="09-11">09 ás 11h</option>
-                                <option value="12-14">12 ás 14h</option>
-                                <option value="15-17">15 ás 17h</option>
+                                <option value="09-11h">09 ás 11h</option>
+                                <option value="12-14h">12 ás 14h</option>
+                                <option value="15-17h">15 ás 17h</option>
                             </select>
                         </div>
                         <input type="submit" value="Contratar">
@@ -194,6 +196,25 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Sucesso!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Seu pedido foi enviado com sucesso.
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- FIM FOOTER -->
 
     <!-- FIM FOOTER -->

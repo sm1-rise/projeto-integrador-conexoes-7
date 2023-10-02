@@ -31,12 +31,15 @@ export default function FormAPI() {
         
                           <label>Telefone</label>
                           <input type="text" value={order.telefone} disabled />
+
+                          <label>Email</label>
+                          <input type="text" value={order.email} disabled />
         
                           <label>Serviço Solicitado</label>
-                          <input type="text" value={order.servico_escolhido} disabled />
+                          <input type="text" value={order.plano} disabled />
         
                           <label>Preferência de Horário</label>
-                          <input type="text" value={order.preferencia_horario} disabled />
+                          <input type="text" value={order.horario} disabled />
 
                           <label>Status</label>
                           <input type="text" value={order.status} disabled />

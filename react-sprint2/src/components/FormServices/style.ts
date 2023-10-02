@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Form = styled.div`
   width: 450px;
-  height: 630px;
+  height: 500px;
   background-color: #fff;
   padding: 30px 35px;
   margin: 50px 0;
@@ -39,4 +39,8 @@ display: flex;
 justify-content: space-between;
 align-content: left;
 padding-right: 170px;
+
+
+
 `;
+

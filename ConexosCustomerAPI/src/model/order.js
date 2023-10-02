@@ -22,11 +22,15 @@ const Order = db.define(
             type: sequelize.STRING(20),
             allowNull:false,
         },
-        servico_escolhido:{
+        plano:{
             type:sequelize.STRING(100),
             allowNull:false,
         },
-        preferencia_horario:{
+        email:{
+            type: sequelize.STRING(100),
+            allowNull: false
+        },
+        horario:{
             type:sequelize.STRING(100),
             allowNull:false,
         },

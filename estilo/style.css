@@ -196,6 +196,10 @@ section .container {
   background-color: #fff;
   border: 1px solid rgb(210, 210, 210);
   box-shadow: 10px 5px 5px rgb(210, 210, 210);
+
+  p{
+    font-size: 20px;
+  }
 }
 
 .form-group {
