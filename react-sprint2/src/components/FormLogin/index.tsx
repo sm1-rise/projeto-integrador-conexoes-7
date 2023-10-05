@@ -2,6 +2,7 @@ import axios from "axios";
 import Botao from "../Buttom";
 import { Form, CamposForm, Container } from "./style";
 import { FormEventHandler, useState, useEffect } from "react";
+import { Alert, AlertTitle } from "@mui/material";
 
 
 export default function LoginAcesso() {
@@ -10,7 +11,7 @@ export default function LoginAcesso() {
     const [senha, setSenha] = useState("");
     const [token, setToken] = useState<string>("");
     const [login, setLogin] = useState("");
-
+    const [error, setError] = useState("");
 
     const data = {
         codigoAcesso,
@@ -26,15 +27,18 @@ export default function LoginAcesso() {
             const token = response.data.token; 
             setToken(token); 
             setLogin(response.data);
-            console.log(login);
             localStorage.setItem("token", token); 
-            
             if(token){
                 window.location.href = "/inicio"; 
             }// Redirecione o usuário para a página desejada após o login bem-sucedido
         })
         .catch(error => {
-            console.error("Não foi possível realizar o login");
+            if (error.response && error.response.data) {
+                const errorMessage = error.response.data.error; // Obtém a mensagem de erro da resposta
+                setError(errorMessage); // Armazena a mensagem de erro no estado "error"
+            } else {
+                setError("Não foi possível realizar o login"); // Caso não haja uma mensagem de erro específica na resposta
+            }
         });
     };
 
@@ -42,6 +46,7 @@ export default function LoginAcesso() {
         <>
             <Container>
                 <Form onSubmit={logar}>
+
                     <CamposForm>
                         <label>Código de acesso</label>
                         <input
@@ -58,10 +63,17 @@ export default function LoginAcesso() {
                             value={senha}
                             onChange={(e) => setSenha(e.target.value)}
                         />
-
+                    
                     </CamposForm>
                     <Botao type="botaoLogin" text="entrar" />
                 </Form>
+                {error &&
+                    <Alert severity="error">
+                    <AlertTitle>Error</AlertTitle>
+                    {error}
+                </Alert>
+                }
+                
             </Container >
         </>
     );

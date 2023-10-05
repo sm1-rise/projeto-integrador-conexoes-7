@@ -5,16 +5,12 @@ import TextoPrincipal from "../../components/TextoPrincipal";
 import { useEffect } from "react";
 
 export default function Login() {
-
-    useEffect(() => {
-   
+    useEffect(()=>{
         const token = localStorage.getItem("token");
-
-        if (token) {
-            window.location.href = "/inicio"; 
-        }
-    }, []);
-
+         if (token) {
+        window.location.href = "/inicio";
+    }
+    })
 
     return (
         <>

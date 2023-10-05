@@ -4,8 +4,6 @@ import Services from "./pages/Services"
 import ServicoDetalhe from "./pages/ServicoDetalhe";
 import Relatorio from "./pages/Relatorio";
 import Inicio from "./pages/Inicio";
-import Teste from "./pages/Testes";
-
 
 export default function Routes() {
     const routes = createBrowserRouter([
@@ -25,12 +23,6 @@ export default function Routes() {
             path: "/relatorios",
             element: <Relatorio />
         },
-        {
-            path: "/teste",
-            element: <Teste />
-
-        },
-
         {
             path: "/Inicio",
             element: <Inicio/>
