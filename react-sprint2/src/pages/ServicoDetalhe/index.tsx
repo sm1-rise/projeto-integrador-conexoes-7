@@ -6,8 +6,13 @@ import FormAPI from "../../components/FormAPI";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { NotAuthenticated } from "../../components/NotAuthenticated/NotAuthenticated";
 
 export default function ServicoDetalhe() {
+
+    useEffect(()=>{
+        NotAuthenticated();
+    },[])
 
     const [order, setOrder] = useState<any> ([]);
     let {id} = useParams();    
@@ -23,8 +28,8 @@ export default function ServicoDetalhe() {
     },  []);
 
     return (
-        <>
-
+        NotAuthenticated() ?(
+       <>
             <Header />
             <TextoPrincipal
                 titulo={"Pedido: " + id}
@@ -33,6 +38,14 @@ export default function ServicoDetalhe() {
             <FormAPI />
             <Footer />
         </>
+    ) : (
+        <>
+             <Header />
+                <TextoPrincipal titulo="Página Não Autorizada" descricao="Você não tem permissão para acessar esta página." />
+                {/* Conteúdo adicional para a página não autorizada, se necessário */}
+                <Footer />  
+        </>
+    )
     );
 }
 

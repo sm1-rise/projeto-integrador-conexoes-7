@@ -1,39 +1,41 @@
 import axios from "axios";
 import Botao from "../Buttom";
 import { Form, CamposForm, Container } from "./style";
-import { FormEventHandler, useEffect, useState } from "react";
+import { FormEventHandler, useState, useEffect } from "react";
 
-
-interface User{
-    codigoAcesso: string;
-    senha:string;
-}
 
 export default function LoginAcesso() {
-    const [user, setUser] = useState <User[]>([]);
-
-    useEffect (()=>{
-        const url = "http://localhost:3000/user";
-        axios.get(url)
-        .then((response) =>{setUser(response.data)})
-    })
-
-     
 
     const [codigoAcesso, setCodigoAcesso] = useState("");
     const [senha, setSenha] = useState("");
-    const [errorMsg, setErrorMsg] = useState ("");
-    const [sucess, setSucess] = useState ("");
+    const [token, setToken] = useState<string>("");
+    const [login, setLogin] = useState("");
+
+
+    const data = {
+        codigoAcesso,
+        senha
+    }
+
     const logar: FormEventHandler<HTMLFormElement> = (evento) => {
-
-
-
-        //evita recarregamento da pagina no envio do formulario
         evento.preventDefault();
-       
-        //pra ver o valor de cada campo do formulario
-        console.log(codigoAcesso);
-        console.log(senha);
+
+        const url = "http://localhost:3000/login";
+        axios.post(url, data)
+        .then((response) => {
+            const token = response.data.token; 
+            setToken(token); 
+            setLogin(response.data);
+            console.log(login);
+            localStorage.setItem("token", token); 
+            
+            if(token){
+                window.location.href = "/inicio"; 
+            }// Redirecione o usuário para a página desejada após o login bem-sucedido
+        })
+        .catch(error => {
+            console.error("Não foi possível realizar o login");
+        });
     };
 
     return (
@@ -60,8 +62,9 @@ export default function LoginAcesso() {
                     </CamposForm>
                     <Botao type="botaoLogin" text="entrar" />
                 </Form>
-
             </Container >
         </>
     );
 }
+
+
