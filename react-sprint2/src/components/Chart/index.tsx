@@ -16,7 +16,7 @@ interface Order {
 }
 
 export default function Chart() {
-    
+
     const [order, setOrder] = useState<Order[]>([]);
     const [planCounts, setPlanCounts] = useState<{ [key: string]: number }>({});
 
@@ -49,7 +49,7 @@ export default function Chart() {
         labels: Object.keys(planCounts),
         datasets: [
             {
-                label: '# of Votes',
+                label: 'Quantidade',
                 data: Object.values(planCounts),
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
