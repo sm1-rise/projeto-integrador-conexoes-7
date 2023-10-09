@@ -11,7 +11,8 @@ router.put("/order/:id", orderController.updateOrder);
 router.delete("/order/:id", orderController.deleteOrder);
 
 //ROTAS USER
-router.post("/auth", userController.login );
+//Se tirar a função auth funciona o login.
+router.post("/auth", auth, userController.login);
 router.get("/user", userController.getAll);
 router.get("/user/:id", auth, userController.getById);
 router.post("/user", userController.createUser);
