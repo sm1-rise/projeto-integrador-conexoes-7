@@ -29,12 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(function (response) {
                 console.log("Resposta da API:", response.data);
                 $("#myModal").modal("show");
-              
+
             })
             .catch(function (error) {
                 console.error("Erro na solicitação:", error);
             });
     });
 
+
+    axios.post();
 });
 
