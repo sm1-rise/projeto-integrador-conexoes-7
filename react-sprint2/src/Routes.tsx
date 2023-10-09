@@ -8,7 +8,7 @@ import Inicio from "./pages/Inicio";
 export default function Routes() {
     const routes = createBrowserRouter([
         {
-            path: "/",
+            path: "/login",
             element: <Login />,
         },
         {
@@ -24,7 +24,7 @@ export default function Routes() {
             element: <Relatorio />
         },
         {
-            path: "/Inicio",
+            path: "/inicio",
             element: <Inicio/>
         }
 
