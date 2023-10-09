@@ -29,12 +29,18 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(function (response) {
                 console.log("Resposta da API:", response.data);
                 $("#myModal").modal("show");
+                limparFormulario();
               
             })
             .catch(function (error) {
                 console.error("Erro na solicitação:", error);
             });
     });
+    function limparFormulario() {
+        // Obtém o elemento do formulário pelo ID
+        formulario.reset();
+    }
 
+   
 });
 
